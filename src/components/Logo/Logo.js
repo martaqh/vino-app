@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWineBottle } from '@fortawesome/free-solid-svg-icons';
+import { faBottleDroplet, faBottleWater, faChampagneGlasses, faWineBottle, faWineGlassEmpty } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './Logo.module.scss'
 
@@ -7,6 +7,7 @@ import styles from './Logo.module.scss'
 const Logo = () => {
     return (
         <div className={styles.logo}>
+            
             <a href="/">
             caber<span>.net</span>
             </a>
