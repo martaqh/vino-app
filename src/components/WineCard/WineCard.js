@@ -1,14 +1,30 @@
 import styles from './WineCard.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlobe, faGlobeAmericas, faLeaf, faMap, faMapMarker, faMapMarkerAlt, faShoppingBag, faShoppingBasket, faStore } from '@fortawesome/free-solid-svg-icons'
+
 
 const WineCard = props => {
 
     return (
-        <section className={styles.wineCard}>
+        <div className={styles.wineCard}>
             <h4>{props.name}</h4>
-            <p>{props.grapeVariety}</p>
-            <p>{props.country}</p>
-            <p>{props.shop}</p>
-        </section>
+            <section>
+                <FontAwesomeIcon icon={faLeaf} />
+                <p>{props.grapeVariety}</p>
+            </section>
+            
+            <section className={styles.wineCard__country}>
+                <FontAwesomeIcon icon={faGlobe} />
+                <p>{props.country}</p>
+            </section>
+
+            <section>
+                <FontAwesomeIcon icon={faShoppingBasket} />
+                <p>{props.shop}</p>
+            </section>
+            
+            
+        </div>
     )
 }
 
