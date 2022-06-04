@@ -1,0 +1,12 @@
+@import '../../styles/settings.scss';
+
+.addWineForm {
+    display: flex;
+    flex-direction: column;
+    
+    label {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+}
