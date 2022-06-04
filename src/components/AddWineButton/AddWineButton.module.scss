@@ -1,0 +1,23 @@
+@import '../../styles/settings.scss';
+
+.addWineButton {
+    
+    background-color: $color-accent;
+    border-radius: 5%;
+    padding: 15px;
+
+    a {    
+        width: 100%;
+        color: $color-text-reverse;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    span {
+        margin-right: 20px;
+    }
+}
