@@ -7,8 +7,6 @@ const ShopsList = () => {
     const getAllShops = ({ wines }) => wines.map(wine => wine.shop);
     const allShops = useSelector(state => getAllShops(state));
     const shops = [...new Set(allShops)];
-    console.log(allShops);
-    console.log(shops);
 
     return (
         <section>
@@ -16,6 +14,8 @@ const ShopsList = () => {
         <ul className={styles.shopsList}>
           {shops.map(shop => <ShopCard key={shortid()} >{shop}</ ShopCard>)}
         </ul>
+
+
         </section>
         
     )
