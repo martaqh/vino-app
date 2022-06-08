@@ -7,13 +7,11 @@ export const addWine = payload => ({ type: 'ADD_WINE', payload });
 const reducer = (state, action) => {
     switch(action.type) {
       case 'ADD_WINE':
-        return [...state, {...action.payload}];
-    default:
-    return state;
+        return {...state, wines: [...state.wines, {...action.payload}]};
+      default:
+        return state;
   };
 };
-
-
 
 const store = createStore(
   reducer,
