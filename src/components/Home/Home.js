@@ -1,11 +1,12 @@
-import AddWineButton from "../AddWineButton/AddWineButton"
+import ButtonAddWine from '../ButtonAddWine/ButtonAddWine';
+import ButtonShowWineList from '../ButtonShowWineList/ButtonShowWineList';
 import ShopsList from "../ShopsList/ShopsList";
 
 const Home = () => {
     return (
         <main>
-            <AddWineButton />
-            <ShopsList />
+            <ButtonAddWine />
+            <ButtonShowWineList />
         </main>    
     )
 }

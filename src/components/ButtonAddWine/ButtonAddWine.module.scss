@@ -1,13 +1,13 @@
 @import '../../styles/settings.scss';
 
-.addWineButton {
+.buttonAddWine {
+    margin-top: 30px;
     background-color: $color-accent;
     border-radius: 5%;
     padding: 15px;
     color: $color-text-reverse;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 0.1em;
+    
+    //letter-spacing: 0.1em;
 
     a {    
         width: 100%;
@@ -16,9 +16,14 @@
         font-weight: 600;
         font-size: 20px;
         text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        
     }
 
     span {
-        font-size: 30px;
+        font-size: 20px;
+        padding: 0 10px;
+        cursor: pointer;
     }
 }

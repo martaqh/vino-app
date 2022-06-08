@@ -27,7 +27,7 @@ const AddWineForm = () => {
             <label>Grape variety:</label><TextInput value={grapeVariety} onChange={e => setGrapeVariety(e.target.value)} />
             <label>Country:</label><TextInput value={country} onChange={e => setCountry(e.target.value)} />
             <label>Where to buy:</label><TextInput value={shop} onChange={e => setShop(e.target.value)} />
-            <Button onClick={handleSubmit}>Submit</Button>
+            <Button onClick={handleSubmit}>Dodaj</Button>
         </form> 
     )
 
