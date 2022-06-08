@@ -5,7 +5,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 const ButtonShowWineList = () => {
     return (
         <div className={styles.buttonAddWine}>
-            <a href="/wine-list" >Pokaż moje wina
+            <a href="/wine-list" >Show my wine collection
             <span><FontAwesomeIcon icon={faChevronRight} /> </span>
             </a>
             

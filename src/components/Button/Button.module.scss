@@ -5,8 +5,6 @@
     border-radius: 5%;
     padding: 15px;
     color: $color-text-reverse;
-    display: flex;
-    justify-content: space-between;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
@@ -15,4 +13,5 @@
     border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
+    text-align: center;
 }

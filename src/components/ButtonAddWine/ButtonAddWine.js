@@ -6,7 +6,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 const ButtonAddWine = () => {
     return (
         <div className={styles.buttonAddWine}>
-            <a href="/add-wine-form" >Dodaj wino
+            <a href="/add-wine-form" >Add new wine
             <span><FontAwesomeIcon icon={faPlus} /> </span>
             </a>  
         </div>
