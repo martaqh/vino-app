@@ -1,17 +1,27 @@
 @import '../../styles/settings.scss';
 
 .button {
-    background-color: $color-accent;
+    font-family: $font-main;
+    background-color: $color-text-reverse;
     border-radius: 5%;
     padding: 15px;
-    color: $color-text-reverse;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 20px;
+    margin: 15px 10px;
+    color: $color-text;
+    font-weight: 400;
+    font-size: 14px;
     letter-spacing: 0.05em;
-    margin-top: 30px;
-    border: none;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: $color-accent;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     cursor: pointer;
     text-align: center;
+
+    :hover {
+         border-color: $color-accent;
+         color: $color-accent;
+    }
+
+    .onClick {
+        background-color: $color-accent;
+        color: $color-text-reverse;
+    }
 }

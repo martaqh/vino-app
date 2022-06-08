@@ -7,11 +7,11 @@ import styles from './Logo.module.scss'
 const Logo = () => {
     return (
         <div className={styles.logo}>
-            
             <a href="/">
             caber<span>.net</span>
             </a>
-            <FontAwesomeIcon icon={faWineBottle} />
+            
+            <p>your favorite wine always with you</p>
         </div>
     )
 }

@@ -1,4 +1,10 @@
-$color-accent: #ad2147;
-$color-text: #454343;
-$color-text-reverse: #edebeb;  
-$color-cards: #dfe0e2;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+
+$color-accent: #8b0e3a;
+$color-text: #747474;
+$color-text-reverse: #fffcfc;  
+$color-cards: #f5f2f2;
+
+$font-main: Montserrat, sans-serif;
