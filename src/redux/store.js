@@ -1,22 +1,22 @@
-import { createStore } from 'redux';
-
+import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import initialState from './initialState';
+import winesReducer from './winesRedux';
 
-export const addWine = payload => ({ type: 'ADD_WINE', payload });
+const subreducers = {
+    wines: winesReducer
+}
 
-const reducer = (state, action) => {
-    switch(action.type) {
-      case 'ADD_WINE':
-        return {...state, wines: [...state.wines, {...action.payload}]};
-      default:
-        return state;
-  };
-};
+const reducer = combineReducers(subreducers);
 
 const store = createStore(
   reducer,
   initialState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+  compose(
+    applyMiddleware(thunk),
+    window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : f => f
+  )
 );
 
 export default store;
