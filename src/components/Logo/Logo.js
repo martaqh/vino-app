@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWineBottle, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { faWineBottle } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './Logo.module.scss'
 
