@@ -1,32 +1,37 @@
 {
     "wines": [
         {
+            "color": "red",
             "name": "Rosario",
-            "grapeVariety": "Shiraz",
+            "grape variety": "Shiraz",
             "country": "Portugal",
             "shop": "Lidl"
         },
         {
+            "color": "red",
             "name": "Madame Bobalu",
-            "grapeVariety": "Bobalu",
+            "grape variety": "Bobal",
             "country": "Spain",
             "shop": "Kondrat Wina Wybrane"
         },
         {
+            "color": "red",
             "name": "Fauno",
-            "grapeVariety": "Primitivo",
+            "grape variety": "Primitivo",
             "country": "Italy",
             "shop": "Lidl"
         },
         {
+            "color": "red",
             "name": "Nero d'oro",
-            "grapeVariety": "Nero d'Avola",
+            "grape variety": "Nero d'Avola",
             "country": "Italy",
             "shop": "Mila"
         },
         {
+            
             "name": "Mezzek",
-            "grapeVariety": "Mavrud",
+            "grape variety": "Mavrud",
             "country": "Bulgaria",
             "shop": "Żabka"
         }
