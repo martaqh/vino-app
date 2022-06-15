@@ -31,7 +31,7 @@ export const fetchWines = () => {
         }),
       };
       
-      fetch('http://localhost:3131/wines', newWine)
+      fetch('http://localhost:3131/api/wines', newWine)
   }
 
 const winesReducer = (statePart = [], action) => {
@@ -39,7 +39,8 @@ const winesReducer = (statePart = [], action) => {
       case UPLOAD_WINES:
         return [...action.payload]
       case ADD_WINE:
-            return {...statePart, wines: [...statePart.wines, {...action.payload}]};
+        console.log(statePart, action)
+        return {wines: [...statePart, {...action.payload}]};
       default:
         return statePart;
     };
