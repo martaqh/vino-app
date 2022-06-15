@@ -6,8 +6,13 @@ import AddWineForm from './components/AddWineForm/AddWineForm';
 import Home from './components/Home/Home';
 import Container from './components/Container/Container';
 import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchWines } from './redux/winesRedux';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => dispatch(fetchWines()), [dispatch]);
   return (
     <main >
       <Container className={styles.container}>
