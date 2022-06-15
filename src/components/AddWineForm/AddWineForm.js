@@ -2,8 +2,9 @@ import Button from "../Button/Button";
 import TextInput from "../TextInput/TextInput";
 import styles from './AddWineForm.module.scss';
 import { useDispatch } from "react-redux";
-import { addWine } from "../../redux/store";
+import { addWine } from "../../redux/winesRedux";
 import { useState } from "react";
+import { updateServerData } from "../../redux/winesRedux";
 
 const AddWineForm = () => {
     const dispatch = useDispatch();
@@ -14,11 +15,10 @@ const AddWineForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        console.log( name, grapeVariety, country, shop);
+        updateServerData(name, grapeVariety, country, shop);
         dispatch(addWine({ name, grapeVariety, country, shop }));
-        setName('');
-        setGrapeVariety('');
-        setCountry('');
-        setShop('');
+        
     }
 
     return (
