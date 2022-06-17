@@ -17,7 +17,7 @@ export const fetchWines = () => {
     }
   };
 
-  export const updateServerData = (name, grapeVariety, country, shop) => {
+  export const updateServerData = (name, grapes, country, shop) => {
     const newWine = {
         method: 'POST',
         headers: {
@@ -25,7 +25,7 @@ export const fetchWines = () => {
         },
         body: JSON.stringify({
           name: name,
-          grapeVariety: grapeVariety,
+          grapes: grapes,
           country: country,
           shop: shop
         }),

@@ -1,40 +1,50 @@
 {
-    "wines": [
-        {
-            "color": "red",
-            "name": "Rosario",
-            "grape variety": "Shiraz",
-            "country": "Portugal",
-            "shop": "Lidl"
-        },
-        {
-            "color": "red",
-            "name": "Madame Bobalu",
-            "grape variety": "Bobal",
-            "country": "Spain",
-            "shop": "Kondrat Wina Wybrane"
-        },
-        {
-            "color": "red",
-            "name": "Fauno",
-            "grape variety": "Primitivo",
-            "country": "Italy",
-            "shop": "Lidl"
-        },
-        {
-            "color": "red",
-            "name": "Nero d'oro",
-            "grape variety": "Nero d'Avola",
-            "country": "Italy",
-            "shop": "Mila"
-        },
-        {
-            
-            "name": "Mezzek",
-            "grape variety": "Mavrud",
-            "country": "Bulgaria",
-            "shop": "Żabka"
-        }
-    
-    ]
+  "wines": [
+    {
+      "id": "1",
+      "color": "red",
+      "name": "Rosario",
+      "grapes": "Shiraz",
+      "country": "Portugal",
+      "shop": "Lidl"
+    },
+    {
+      "id": "2",
+      "color": "red",
+      "name": "Madame Bobalu",
+      "grapes": "Bobal",
+      "country": "Spain",
+      "shop": "Kondrat Wina Wybrane"
+    },
+    {
+      "id": "3",
+      "color": "red",
+      "name": "Fauno",
+      "grapes": "Primitivo",
+      "country": "Italy",
+      "shop": "Lidl"
+    },
+    {
+      "id": "4",
+      "color": "red",
+      "name": "Nero d'oro",
+      "grapes": "Nero d'Avola",
+      "country": "Italy",
+      "shop": "Mila"
+    },
+    {
+      "id": "5",
+      "name": "Mezzek",
+      "grapes": "Mavrud",
+      "country": "Bulgaria",
+      "shop": "Żabka"
+    },
+    {
+      "name": "Lab z psem",
+      "grapes": "Touriga Nacional",
+      "country": "Portugal",
+      "shop": "Rossmann",
+      "id": "LFbJpt_"
+    }
+  ]
 }

@@ -10,7 +10,7 @@ const WineCard = props => {
             <h4>{props.name}</h4>
             <section>
                 <FontAwesomeIcon icon={faLeaf} />
-                <p>{props.grapeVariety}</p>
+                <p>{props.grapes}</p>
             </section>
             
             <section className={styles.wineCard__country}>
