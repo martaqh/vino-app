@@ -18,8 +18,8 @@ const AddWineForm = props => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        updateServerData(name, grapes, country, shop);
-        dispatch(addWine({ name, grapes, country, shop }));  
+        updateServerData(name, color, grapes, country, shop);
+        dispatch(addWine({ name, color, grapes, country, shop }));  
     }
 
     return (
