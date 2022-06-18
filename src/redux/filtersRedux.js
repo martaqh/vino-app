@@ -2,7 +2,7 @@
 
 // actions
 const createActionName = actionName => `app/filters/${actionName}`;
-const ADD_FILTER_PARAM = createActionName('ADD_FILTER_PARAM')
+const ADD_FILTER_PARAM = createActionName('ADD_FILTER_PARAM');
 
 // action creators
 export const addFilterParam = payload => ({type: ADD_FILTER_PARAM, payload });

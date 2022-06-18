@@ -1,5 +1,4 @@
 import styles from './FilterCard.module.scss';
-import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import shortid from 'shortid';
 import { addFilterParam } from '../../redux/filtersRedux';
@@ -11,13 +10,10 @@ const FilterCard = props => {
     const uniqueInstances = [...new Set(allOfKind)];
     const correctInstances = uniqueInstances.filter(instance => instance !== undefined);
     const sortedInstances = correctInstances.sort();
-    
-    //const [selectedOption, setSelectedOption] = useState('');
-    const dispatch = useDispatch();
-   // console.log(selectedOption);
-    
 
-   const handleChange = e => {
+    const dispatch = useDispatch();
+
+    const handleChange = e => {
         e.preventDefault();
         dispatch(addFilterParam(e.target.value));  
     } 

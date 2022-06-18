@@ -1,6 +1,7 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import FilterCard from '../FilterCard/FilterCard';
 import shortid from 'shortid';
+import { addMatchingWinesIds } from '../../redux/resultsRedux';
 
 const FiltersList = () => {
 
@@ -11,11 +12,23 @@ const FiltersList = () => {
 
     const getAllFilters = ({ filters }) => filters;
     const allFilters = useSelector(state => getAllFilters(state));
+    
+    const getAllWinesParams = ({ wines }) => wines.map(wine => Object.values(wine));
+    const allWinesParams = useSelector(state => getAllWinesParams(state));
+
+    const dispatch = useDispatch();
+    
+
+    const findMatchingWines =() => {
+     const matchingWines = allWinesParams.filter(wine => allFilters.every(element => wine.includes(element)))
+      return matchingWines;
+    }
 
     const handleSubmit = e => {
       e.preventDefault();
-      console.log(allFilters);
-      
+      const matchingWines = findMatchingWines();
+      const matchingWinesIds = matchingWines.map(wine => wine[wine.length - 1]);
+      dispatch(addMatchingWinesIds(matchingWinesIds)); 
     }
 
     return (
