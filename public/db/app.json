@@ -34,6 +34,7 @@
     },
     {
       "name": "Koza",
+      "color": "red",
       "grapes": "Cabernet Franc",
       "country": "Chile",
       "shop": "Lidl",
@@ -41,6 +42,7 @@
     },
     {
       "name": "Rosario",
+      "color": "red",
       "grapes": "Touriga Nacional",
       "country": "Portugal",
       "shop": "Lidl",
@@ -48,6 +50,7 @@
     },
     {
       "name": "Madame Bobalu",
+      "color": "red",
       "grapes": "Bobal",
       "country": "Spain",
       "shop": "Kondrat/Słowicza",
@@ -55,6 +58,7 @@
     },
     {
       "name": "Picadeiro",
+      "color": "red",
       "grapes": "Touriga Nacional",
       "country": "Portugal",
       "shop": "Kondrat/Słowicza",
