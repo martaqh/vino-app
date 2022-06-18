@@ -1,6 +1,7 @@
 import ButtonAddWine from '../ButtonAddWine/ButtonAddWine';
 import ButtonShowWineList from '../ButtonShowWineList/ButtonShowWineList';
 import FiltersList from '../FiltersList/FiltersList';
+import SearchResultsPage from '../SearchResultsPage/SearchResultsPage';
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <ButtonAddWine />
             <ButtonShowWineList />
             <FiltersList />
+            <SearchResultsPage />
         </main>    
     )
 }
