@@ -1,6 +1,8 @@
 import WineCard from '../WineCard/WineCard';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import shortid from 'shortid';
+import { clearFilters } from '../../redux/filtersRedux';
+import { useNavigate } from 'react-router-dom';
 
 
 const SearchResultsPage = () => {
@@ -20,11 +22,20 @@ const SearchResultsPage = () => {
     }
 
     console.log(matchingWines);
-    
 
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleClick = e => {
+        e.preventDefault();
+        dispatch(clearFilters());
+        navigate('/');
+    }
+    
     return (
         <section>
              <h3>Search results:</h3>
+             <button onClick={handleClick}>(new search)</button>
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
         
         </section>

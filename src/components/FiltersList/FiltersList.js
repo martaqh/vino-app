@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import FilterCard from '../FilterCard/FilterCard';
 import shortid from 'shortid';
 import { addMatchingWinesIds } from '../../redux/resultsRedux';
+import { useNavigate } from 'react-router-dom';
 
 const FiltersList = () => {
 
@@ -17,7 +18,7 @@ const FiltersList = () => {
     const allWinesParams = useSelector(state => getAllWinesParams(state));
 
     const dispatch = useDispatch();
-    
+    const navigate = useNavigate();
 
     const findMatchingWines =() => {
      const matchingWines = allWinesParams.filter(wine => allFilters.every(element => wine.includes(element)))
@@ -28,7 +29,8 @@ const FiltersList = () => {
       e.preventDefault();
       const matchingWines = findMatchingWines();
       const matchingWinesIds = matchingWines.map(wine => wine[wine.length - 1]);
-      dispatch(addMatchingWinesIds(matchingWinesIds)); 
+      dispatch(addMatchingWinesIds(matchingWinesIds));
+      navigate('/search-results');
     }
 
     return (

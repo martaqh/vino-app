@@ -9,6 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchWines } from './redux/winesRedux';
+import SearchResultsPage from './components/SearchResultsPage/SearchResultsPage';
 
 function App() {
   const dispatch = useDispatch();
@@ -18,10 +19,11 @@ function App() {
       <Container className={styles.container}>
       <Logo />
         <Routes>
-                <Route path="*" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/add-wine-form" element={<AddWineForm />} />
                 <Route path="/wine-list" element={<WineList />} />
-                <Route path="/shops-list" element={<ShopsList />} /> 
+                <Route path="/shops-list" element={<ShopsList />} />
+                <Route path="/search-results" element={<SearchResultsPage />} />
         </Routes>
       </Container>
     </main>
