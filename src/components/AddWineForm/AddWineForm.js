@@ -5,8 +5,7 @@ import { useDispatch } from "react-redux";
 import { addWine } from "../../redux/winesRedux";
 import { useState } from "react";
 import { updateServerData } from "../../redux/winesRedux";
-//import { useSelector } from "react-redux/es/exports";
-import categories from "../config";
+
 
 const AddWineForm = props => {
     const dispatch = useDispatch();
