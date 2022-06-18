@@ -32,14 +32,21 @@ const SearchResultsPage = () => {
         navigate('/');
     }
     
+    if (matchingWines.length > 0)
     return (
         <section>
              <h3>Search results:</h3>
              <button onClick={handleClick}>(new search)</button>
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
         
+        </section>  
+    )
+    return (
+        <section>
+            <h3>Sorry, no matching wines in your collection</h3>
+            <button onClick={handleClick}>(new search)</button>
         </section>
-       
+        
     )
 }
 export default SearchResultsPage;
