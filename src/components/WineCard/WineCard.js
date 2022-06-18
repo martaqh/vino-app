@@ -1,6 +1,6 @@
 import styles from './WineCard.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe, faLeaf, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faLeaf, faShoppingBasket, faTint } from '@fortawesome/free-solid-svg-icons'
 
 
 const WineCard = props => {
@@ -8,6 +8,10 @@ const WineCard = props => {
     return (
         <div className={styles.wineCard}>
             <h4>{props.name}</h4>
+            <section>
+                <FontAwesomeIcon icon={faTint} />
+                <p>{props.color}</p>
+            </section>
             <section>
                 <FontAwesomeIcon icon={faLeaf} />
                 <p>{props.grapes}</p>
