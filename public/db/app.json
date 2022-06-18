@@ -2,6 +2,7 @@
   "wines": [
     {
       "name": "Lab z psem",
+      "color": "red",
       "grapes": "Touriga Nacional",
       "country": "Portugal",
       "shop": "Rossmann",
@@ -9,6 +10,7 @@
     },
     {
       "name": "Foka",
+      "color": "red",
       "grapes": "Merlot",
       "country": "Chile",
       "shop": "Lidl",
@@ -16,6 +18,7 @@
     },
     {
       "name": "Tygrys",
+      "color": "red",
       "grapes": "Carmenere",
       "country": "Chile",
       "shop": "Lidl",
@@ -23,10 +26,39 @@
     },
     {
       "name": "Z drabinką",
+      "color": "red",
       "grapes": "Primitivo",
       "country": "Italy",
       "shop": "Rossmann",
       "id": "VLGdT3p"
+    },
+    {
+      "name": "Koza",
+      "grapes": "Cabernet Franc",
+      "country": "Chile",
+      "shop": "Lidl",
+      "id": "Y5i6QMf"
+    },
+    {
+      "name": "Rosario",
+      "grapes": "Touriga Nacional",
+      "country": "Portugal",
+      "shop": "Lidl",
+      "id": "M3zxouJ"
+    },
+    {
+      "name": "Madame Bobalu",
+      "grapes": "Bobal",
+      "country": "Spain",
+      "shop": "Kondrat/Słowicza",
+      "id": "NI7mFD1"
+    },
+    {
+      "name": "Picadeiro",
+      "grapes": "Touriga Nacional",
+      "country": "Portugal",
+      "shop": "Kondrat/Słowicza",
+      "id": "3P8gNOG"
     }
   ]
 }
