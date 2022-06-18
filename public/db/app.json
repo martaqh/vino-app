@@ -45,6 +45,24 @@
       "country": "Portugal",
       "shop": "Rossmann",
       "id": "LFbJpt_"
+    },
+    {
+      "name": "Foka",
+      "grapes": "Merlot",
+      "country": "Chile",
+      "shop": "Lidl",
+      "id": "dWJvTXK"
+    },
+    {
+      "name": "Tygrys",
+      "grapes": "Carmenere",
+      "country": "Chile",
+      "shop": "Lidl",
+      "id": "aFbI4hC"
     }
+  ],
+
+  "filters": [
+    
   ]
 }

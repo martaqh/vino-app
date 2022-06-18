@@ -4,10 +4,12 @@
 const createActionName = actionName => `app/wines/${actionName}`;
 const UPLOAD_WINES = createActionName('UPLOAD_WINES');
 const ADD_WINE = createActionName('ADD_WINE');
+const ADD_FILTER_PARAM = createActionName('ADD_FILTER_PARAM')
 
 // action creators
 export const uploadWines = payload => ({type: UPLOAD_WINES, payload });
 export const addWine = payload => ({type: ADD_WINE, payload });
+export const addFilterParam = payload => ({type: ADD_FILTER_PARAM, payload });
 
 export const fetchWines = () => {
     return (dispatch) => {
@@ -41,8 +43,11 @@ const winesReducer = (statePart = [], action) => {
       case ADD_WINE:
         console.log(statePart, action)
         return {wines: [...statePart, {...action.payload}]};
+      
       default:
         return statePart;
     };
   };
+
+  
   export default winesReducer;

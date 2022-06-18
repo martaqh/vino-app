@@ -1,6 +1,8 @@
 import styles from './FilterCard.module.scss';
-import { useSelector } from 'react-redux';
+import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import shortid from 'shortid';
+import { addFilterParam } from '../../redux/filtersRedux';
 
 const FilterCard = props => {
     
@@ -9,16 +11,27 @@ const FilterCard = props => {
     const uniqueInstances = [...new Set(allOfKind)];
     const correctInstances = uniqueInstances.filter(instance => instance !== undefined);
     const sortedInstances = correctInstances.sort();
+    
+    //const [selectedOption, setSelectedOption] = useState('');
+    const dispatch = useDispatch();
+   // console.log(selectedOption);
+    
+
+   const handleChange = e => {
+        e.preventDefault();
+        dispatch(addFilterParam(e.target.value));  
+    } 
 
     return (
         <li className={styles.filterCard}>
             <p className={styles.filterCard__name}>{props.category}</p>
             <button className={styles.goButton}><span className='fa fa-angle-double-right'></span></button>
             <select className="form-select"
-                    aria-label="Default select example"
+                    
+                   onChange={handleChange}
                     >
                 <option>{props.currentStatus}</option>
-                {sortedInstances.map(instance => <option key={shortid()}>{instance}</option> )}
+                {sortedInstances.map(instance => <option key={shortid()} value={instance} >{instance}</option> )}
             </select>
         </li>
     )
