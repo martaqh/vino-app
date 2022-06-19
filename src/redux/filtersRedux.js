@@ -13,7 +13,7 @@ const filtersReducer = (statePart = [], action) => {
     switch (action.type) {
       case ADD_FILTER_PARAM:
         console.log(statePart, action.payload)
-        return action.payload;
+        return action.payload
       case CLEAR_FILTERS:
         return []
       default:
