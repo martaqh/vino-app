@@ -12,8 +12,8 @@ export const clearFilters = payload => ({type: CLEAR_FILTERS, payload });
 const filtersReducer = (statePart = [], action) => {
     switch (action.type) {
       case ADD_FILTER_PARAM:
-        console.log(statePart, action)
-        return [...statePart, action.payload];
+        console.log(statePart, action.payload)
+        return action.payload;
       case CLEAR_FILTERS:
         return []
       default:

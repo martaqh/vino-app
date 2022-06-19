@@ -1,6 +1,11 @@
 const initialState = {
     wines: [],
-    filters: [],
+    filters: {
+        color: '',
+        grapes: '',
+        country: '',
+        shop: '',
+      },
     results: [],
 }
 
