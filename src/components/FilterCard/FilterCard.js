@@ -30,7 +30,7 @@ const FilterCard = props => {
     const handleChange = e => {
         e.preventDefault();
         setOptionSelected(e.target.value);
-        
+        filterObject[props.category] = e.target.value;
         dispatch(addFilterParam(filterObject))
     }
 
