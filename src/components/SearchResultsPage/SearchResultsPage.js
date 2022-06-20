@@ -9,6 +9,7 @@ const SearchResultsPage = () => {
 
     const getAllWinesParams = ({ wines }) => wines.map(wine => Object.values(wine));
     const allWinesParams = useSelector(state => getAllWinesParams(state));
+    console.log(allWinesParams)
 
     const getAllFilters = ({ filters }) => Object.values(filters);
     const allFilters = useSelector(state => getAllFilters(state));
