@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import FilterCard from '../FilterCard/FilterCard';
 import shortid from 'shortid';
-
+import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 //import { addFilterParam } from '../../redux/filtersRedux';
 
@@ -12,21 +12,23 @@ const FiltersList = () => {
     const categories = [...new Set(allCategories.flat(1))];
     const correctCategories = categories.filter(category => category !== 'name' && category !== 'id');
 
-    const navigate = useNavigate();
-    const handleSubmit = e => {
+   // const navigate = useNavigate();
+   /* const handleSubmit = e => {
       e.preventDefault();
       navigate('/search-results');
-    }
+    } */
 
     return (
-        <form onSubmit={handleSubmit}>
-        <h2>Search your wines by:</h2>
+        <div>
+          <h2>Search your wines by:</h2>
         <ul>
           {correctCategories.map(category => <FilterCard key={shortid()} category={category} >{category}</ FilterCard>)}
         </ul>
 
-        <button>Search</button>
-        </form> 
+        <Link to="/search-results">Search</Link>
+        </div>
+        
+        
     )
 }
 

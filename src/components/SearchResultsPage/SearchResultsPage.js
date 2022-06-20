@@ -10,6 +10,7 @@ const SearchResultsPage = () => {
 
     const getAllWinesParams = ({ wines }) => wines.map(wine => Object.values(wine));
     const allWinesParams = useSelector(state => getAllWinesParams(state));
+    console.log(allWinesParams)
 
     const getAllFilters = ({ filters }) => Object.values(filters);
     const allFilters = useSelector(state => getAllFilters(state));
@@ -25,19 +26,16 @@ const SearchResultsPage = () => {
 
     const allMatchingWines = findMatchingWines();
     const matchingWinesIds = allMatchingWines.map(wine => wine[wine.length - 1]);
-    dispatch(addMatchingWinesIds(matchingWinesIds));
+   
     
     const getAllWines = ({ wines }) => wines;
     const allWines = useSelector(state => getAllWines(state));
     console.log(allWines)
 
-    const getResultingIds = ({ results }) => results;
-    const resultingIds = useSelector(state => getResultingIds(state));
-    console.log(resultingIds)
     
     let matchingWines = [];    
 
-    for (let wineId of resultingIds) {
+    for (let wineId of matchingWinesIds) {
         console.log(wineId)
         allWines.filter(wine => wine.id === wineId ? matchingWines.push(wine) : null)
     }
