@@ -6,7 +6,6 @@ const initialState = {
         country: '',
         shop: '',
       },
-    results: [],
 }
 
 export default initialState;

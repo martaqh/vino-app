@@ -3,12 +3,10 @@ import thunk from 'redux-thunk';
 import filtersReducer from './filtersRedux';
 import initialState from './initialState';
 import winesReducer from './winesRedux';
-import resultsReducer from './resultsRedux';
 
 const subreducers = {
     wines: winesReducer,
-    filters: filtersReducer,
-    results: resultsReducer,
+    filters: filtersReducer
 }
 
 const reducer = combineReducers(subreducers);
