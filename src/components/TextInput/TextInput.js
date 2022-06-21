@@ -6,7 +6,6 @@ const TextInput = props => {
     console.log(props.category);
     const getAllOfKind = ({ wines }) => wines.map(wine => wine[props.category]);
     const allOfKind = useSelector(state => getAllOfKind(state));
-    console.log(allOfKind);
     const uniqueInstances = [...new Set(allOfKind)];
     const correctInstances = uniqueInstances.filter(instance => instance !== undefined);
     const sortedInstances = correctInstances.sort();

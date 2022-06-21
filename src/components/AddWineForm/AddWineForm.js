@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { addWine } from "../../redux/winesRedux";
 import { useState } from "react";
 import { updateServerData } from "../../redux/winesRedux";
+import { ImageUploader } from "../ImageUploader/ImageUploader";
 
 
 const AddWineForm = props => {
@@ -28,6 +29,7 @@ const AddWineForm = props => {
             <label>Grapes:</label><TextInput category="grapes" value={grapes} onChange={e => setGrapes(e.target.value)} />
             <label>Country:</label><TextInput category="country" value={country} onChange={e => setCountry(e.target.value)} />
             <label>Where to buy:</label><TextInput category="shop" value={shop} onChange={e => setShop(e.target.value)} />
+            <label>Add picture of the label:</label><ImageUploader />
             <Button onClick={handleSubmit}>Add wine</Button>
         </form> 
     )

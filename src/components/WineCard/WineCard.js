@@ -1,6 +1,7 @@
 import styles from './WineCard.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe, faLeaf, faShoppingBasket, faTint } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faLeaf, faShoppingBasket, faTint } from '@fortawesome/free-solid-svg-icons';
+import { ImageUploader } from '../ImageUploader/ImageUploader';
 
 
 const WineCard = props => {
@@ -27,6 +28,7 @@ const WineCard = props => {
                 <p>{props.shop}</p>
             </section>
             
+            <ImageUploader />
             
         </div>
     )

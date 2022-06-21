@@ -71,6 +71,22 @@
       "country": "Portugal",
       "shop": "Kondrat/Słowicza",
       "id": "gGzbkhq"
+    },
+    {
+      "name": "Momo",
+      "color": "white",
+      "grapes": "Sauvignon Blanc",
+      "country": "New Zeland",
+      "shop": "Kondrat/Słowicza",
+      "id": "7h4mOCe"
+    },
+    {
+      "name": "Rio Lilo",
+      "color": "white",
+      "grapes": "",
+      "country": "Spain",
+      "shop": "Kondrat/Słowicza",
+      "id": "thjaFz2"
     }
   ]
 }
