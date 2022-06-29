@@ -2,6 +2,7 @@ import styles from './WineCard.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe, faLeaf, faShoppingBasket, faTint } from '@fortawesome/free-solid-svg-icons';
 import { ImageUploader } from '../ImageUploader/ImageUploader';
+import ButtonRemoveWine from '../ButtonRemoveWine/ButtonRemoveWine';
 
 
 const WineCard = props => {
@@ -29,6 +30,7 @@ const WineCard = props => {
             </section>
             
             <ImageUploader />
+            <ButtonRemoveWine wineId={props.id} />
             
         </div>
     )
