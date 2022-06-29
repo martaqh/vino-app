@@ -1,0 +1,27 @@
+@import '../../styles/settings.scss';
+
+.accordionTitle {
+    background-color: $color-cards;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    h4 {
+
+        font-size: 18px;
+        margin: 15px;
+       
+    }
+    
+}
+
+.accordionOpening {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.accordionContent {
+    margin-top: 0;
+}

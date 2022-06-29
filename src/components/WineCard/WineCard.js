@@ -9,7 +9,7 @@ import Accordion from '../Accordion/Accordion';
 const WineCard = props => {
 
     return (
-            <Accordion title={<h4>{props.name}</h4>}
+            <Accordion title={props.name}
                        content={ <div className={styles.wineCard}>
                        <section>
                            <FontAwesomeIcon icon={faTint} />
