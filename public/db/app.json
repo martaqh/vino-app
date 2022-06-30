@@ -3,7 +3,10 @@
     {
       "name": "Lab z psem",
       "color": "red",
-      "grapes": "Touriga Nacional",
+      "grapes": [
+        "Touriga Nacional",
+        "Trincadeiro"
+      ],
       "country": "Portugal",
       "shop": "Rossmann",
       "id": "LFbJpt_"
@@ -11,7 +14,9 @@
     {
       "name": "Foka",
       "color": "red",
-      "grapes": "Merlot",
+      "grapes": [
+        "Merlot"
+      ],
       "country": "Chile",
       "shop": "Lidl",
       "id": "dWJvTXK"
@@ -19,7 +24,9 @@
     {
       "name": "Tygrys",
       "color": "red",
-      "grapes": "Carmenere",
+      "grapes": [
+        "Carmenere"
+      ],
       "country": "Chile",
       "shop": "Lidl",
       "id": "aFbI4hC"
@@ -27,7 +34,9 @@
     {
       "name": "Z drabinką",
       "color": "red",
-      "grapes": "Primitivo",
+      "grapes": [
+        "Primitivo di Manduria"
+      ],
       "country": "Italy",
       "shop": "Rossmann",
       "id": "VLGdT3p"
@@ -35,7 +44,9 @@
     {
       "name": "Koza",
       "color": "red",
-      "grapes": "Cabernet Franc",
+      "grapes": [
+        "Cabernet Franc"
+      ],
       "country": "Chile",
       "shop": "Lidl",
       "id": "Y5i6QMf"
@@ -43,7 +54,9 @@
     {
       "name": "Rosario",
       "color": "red",
-      "grapes": "Touriga Nacional",
+      "grapes": [
+        "Touriga Nacional"
+      ],
       "country": "Portugal",
       "shop": "Lidl",
       "id": "M3zxouJ"
@@ -51,7 +64,9 @@
     {
       "name": "Madame Bobalu",
       "color": "red",
-      "grapes": "Bobal",
+      "grapes": [
+        "Bobal"
+      ],
       "country": "Spain",
       "shop": "Kondrat/Słowicza",
       "id": "NI7mFD1"
@@ -59,7 +74,9 @@
     {
       "name": "Picadeiro",
       "color": "red",
-      "grapes": "Touriga Nacional",
+      "grapes": [
+        "Touriga Nacional"
+      ],
       "country": "Portugal",
       "shop": "Kondrat/Słowicza",
       "id": "3P8gNOG"
@@ -67,7 +84,9 @@
     {
       "name": "Adega do Monte",
       "color": "red",
-      "grapes": "Touriga Nacional",
+      "grapes": [
+        "Touriga Nacional"
+      ],
       "country": "Portugal",
       "shop": "Kondrat/Słowicza",
       "id": "gGzbkhq"
@@ -75,7 +94,9 @@
     {
       "name": "Momo",
       "color": "white",
-      "grapes": "Sauvignon Blanc",
+      "grapes": [
+        "Sauvignon Blanc"
+      ],
       "country": "New Zeland",
       "shop": "Kondrat/Słowicza",
       "id": "7h4mOCe"
@@ -83,10 +104,63 @@
     {
       "name": "Rio Lilo",
       "color": "white",
-      "grapes": "",
+      "grapes": [
+        ""
+      ],
       "country": "Spain",
       "shop": "Kondrat/Słowicza",
       "id": "thjaFz2"
+    },
+    {
+      "name": "Nero d'oro",
+      "color": "red",
+      "grapes": [
+        "Nero d'Avola"
+      ],
+      "country": "Italy",
+      "shop": "Delikatesy Centrum",
+      "id": "xQ2RaV_"
+    },
+    {
+      "name": "Coloma z maczkiem",
+      "color": "red",
+      "grapes": [
+        "Tempranillo"
+      ],
+      "country": "Spain",
+      "shop": "Kondrat/Słowicza",
+      "id": "ZJnh9M3"
+    },
+    {
+      "name": "Heredidade de Gambia",
+      "color": "red",
+      "grapes": [
+        "Touriga Nacional",
+        "Touriga Franca"
+      ],
+      "country": "Portugal",
+      "shop": "Madeira",
+      "id": "qWPqV9A"
+    },
+    {
+      "name": "Dwie kaczki",
+      "color": "red",
+      "grapes": [
+        "Castelao"
+      ],
+      "country": "Portugal",
+      "shop": "Madeira",
+      "id": "O_SfzdS"
+    },
+    {
+      "name": "Wieloryb",
+      "color": "red",
+      "grapes": [
+        "Shiraz"
+      ],
+      "country": "Chile",
+      "shop": "Lidl",
+      "id": "rHILTwJ"
     }
   ]
 }

@@ -9,7 +9,8 @@ const SearchResultsPage = () => {
 
     const getAllWinesParams = ({ wines }) => wines.map(wine => Object.values(wine));
     const allWinesParams = useSelector(state => getAllWinesParams(state));
-    console.log(allWinesParams)
+    const flattenWinesParams = allWinesParams.map(wine => wine.flat(1))
+    console.log(flattenWinesParams);
 
     const getAllFilters = ({ filters }) => Object.values(filters);
     const allFilters = useSelector(state => getAllFilters(state));
@@ -19,7 +20,7 @@ const SearchResultsPage = () => {
     const navigate = useNavigate();
 
     const findMatchingWines = () => {
-     const matchingWines = allWinesParams.filter(wine => correctFilters.every(element => wine.includes(element)))
+     const matchingWines = flattenWinesParams.filter(wine => correctFilters.every(element => wine.includes(element)))
       return matchingWines;
     }
 

@@ -12,9 +12,11 @@ const AddWineForm = props => {
     const dispatch = useDispatch();
     const [name, setName] = useState('');
     const [color, setColor] = useState('');
-    const [grapes, setGrapes] = useState('');
+    const [grapes, setGrapes] = useState([]);
     const [country, setCountry] = useState('');
     const [shop, setShop] = useState('');
+
+    console.log(grapes);
 
     const handleSubmit = e => {
         e.preventDefault();

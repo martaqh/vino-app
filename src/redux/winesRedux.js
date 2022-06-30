@@ -30,7 +30,7 @@ export const fetchWines = () => {
         body: JSON.stringify({
           name: name,
           color: color,
-          grapes: grapes,
+          grapes: [grapes],
           country: country,
           shop: shop
         }),

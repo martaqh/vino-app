@@ -9,20 +9,21 @@ const FilterCard = props => {
     
     const getAllOfKind = ({wines}) => wines.map(wine => wine[props.category]);
     const allOfKind = useSelector(state => getAllOfKind(state));
-    const uniqueInstances = [...new Set(allOfKind)];
-    const correctInstances = uniqueInstances.filter(instance => instance !== undefined);
+    const flattenAllOfKind = allOfKind.flat(1);
+    const uniqueInstances = [...new Set(flattenAllOfKind)];
+    //const arraysInArray = uniqueInstances.filter(instance => Array.isArray(instance));
+    //const valuesFromArrays = arraysInArray.flat(1);
+    //const uniqueValuesFromArrays = [...new Set(valuesFromArrays)]
+    //const correctValuesFromArrays = uniqueValuesFromArrays.filter(instance => instance !== undefined)
+    //const sortedValuesFromArrays = correctValuesFromArrays.sort();
+    const correctInstances = uniqueInstances.filter(instance => !Array.isArray(instance) && instance !== undefined);
     const sortedInstances = correctInstances.sort();
-
     const getFilterObject = ({ filters }) => filters;
-    const filterObject = useSelector(state => getFilterObject(state))
-    console.log(filterObject);
-
-    
+    const filterObject = useSelector(state => getFilterObject(state))    
 
     const dispatch = useDispatch();
     const [optionSelected, setOptionSelected] = useState('');
-    //const [keySelected, setKeySelected] = useState(props.category);
-    
+        
     filterObject[props.category] = optionSelected
         console.log(filterObject)
     
@@ -34,7 +35,6 @@ const FilterCard = props => {
         dispatch(addFilterParam(filterObject))
     }
 
-    //dispatch(addFilterParam({keySelected: optionSelected})); 
 
     return (
         <li className={styles.filterCard}>
@@ -45,7 +45,10 @@ const FilterCard = props => {
                    onChange={handleChange}
                     >
                 <option>{props.currentStatus}</option>
-                {sortedInstances.map(instance => <option key={shortid()} value={instance} >{instance}</option> )}
+                {
+                sortedInstances.map(instance => <option key={shortid()} value={instance} >{instance}</option>)
+                
+            }
             </select>
         </li>
     )
