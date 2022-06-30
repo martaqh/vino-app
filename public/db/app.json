@@ -1,16 +1,6 @@
 {
   "wines": [
     {
-      "name": "Foka",
-      "color": "red",
-      "grapes": [
-        "Merlot"
-      ],
-      "country": "Chile",
-      "shop": "Lidl",
-      "id": "dWJvTXK"
-    },
-    {
       "name": "Tygrys",
       "color": "red",
       "grapes": [
@@ -140,16 +130,6 @@
       "country": "Portugal",
       "shop": "Madeira",
       "id": "O_SfzdS"
-    },
-    {
-      "name": "Wieloryb",
-      "color": "red",
-      "grapes": [
-        "Shiraz"
-      ],
-      "country": "Chile",
-      "shop": "Lidl",
-      "id": "rHILTwJ"
     }
   ]
 }

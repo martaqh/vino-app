@@ -1,7 +1,15 @@
 @import '../../styles/settings.scss';
 
-.accordionTitle {
+.accordionItem {
     background-color: $color-cards;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.accordionTitle {
+    
     margin-top: 10px;
     padding: 5px;
     display: flex;
@@ -22,6 +30,3 @@
     cursor: pointer;
 }
 
-.accordionContent {
-    margin-top: 0;
-}
