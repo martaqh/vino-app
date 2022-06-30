@@ -1,17 +1,6 @@
 {
   "wines": [
     {
-      "name": "Lab z psem",
-      "color": "red",
-      "grapes": [
-        "Touriga Nacional",
-        "Trincadeiro"
-      ],
-      "country": "Portugal",
-      "shop": "Rossmann",
-      "id": "LFbJpt_"
-    },
-    {
       "name": "Foka",
       "color": "red",
       "grapes": [

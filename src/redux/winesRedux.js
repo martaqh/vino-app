@@ -47,12 +47,11 @@ export const fetchWines = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        id: wineId
         
       }),
     };
     
-    fetch('http://localhost:3131/wines', options)
+    fetch('http://localhost:3131/wines/' + wineId, options)
   }
 
 
