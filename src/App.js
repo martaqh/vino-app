@@ -11,12 +11,15 @@ import { useEffect } from 'react';
 import { fetchWines } from './redux/winesRedux';
 import SearchResultsPage from './components/SearchResultsPage/SearchResultsPage';
 
+
+
 function App() {
   const dispatch = useDispatch();
   useEffect(() => dispatch(fetchWines()), [dispatch]);
   return (
     <main >
       <Container className={styles.container}>
+      
       <Logo />
         <Routes>
                 <Route path="/" element={<Home />} />
@@ -25,6 +28,7 @@ function App() {
                 <Route path="/shops-list" element={<ShopsList />} />
                 <Route path="/search-results" element={<SearchResultsPage />} />
         </Routes>
+        
       </Container>
     </main>
   );

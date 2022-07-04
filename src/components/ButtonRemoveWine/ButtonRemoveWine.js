@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { removeWineFromServer, removeWine } from '../../redux/winesRedux';
 
-const RemoveWine = props => {
+const ButtonRemoveWine = props => {
     const dispatch = useDispatch();   
 
     const handleClick = e => {
@@ -23,4 +23,4 @@ const RemoveWine = props => {
     );
 }
 
-export default RemoveWine;
+export default ButtonRemoveWine;
