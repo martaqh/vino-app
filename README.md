@@ -1,3 +1,7 @@
+An app for wine lovers enabling to store and filter information about their favourite wines.
+
+This is my personal project, being developed at request of my Dad.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
