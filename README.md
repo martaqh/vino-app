@@ -1,3 +1,5 @@
+# caber.NET #
+
 An app for wine lovers enabling to store and filter information about their favourite wines.
 
 This is my personal project, being developed at request of my Dad.
@@ -5,14 +7,14 @@ This is my personal project, being developed at request of my Dad.
 The app is being created with React.js and uses JSON server to store wines' data provided by user.
 
 The app enables users to:
--- display wine cards with basic information regarding each wine like its color, grapes, country of origin or shop where it's available
--- add a wine card to the collection
--- edit exitsting wine card
--- delete wine card
--- filter wine cards by selected parameters
+- display wine cards with basic information regarding each wine like its color, grapes, country of origin or shop where it's available
+- add a wine card to the collection
+- edit exitsting wine card
+- delete wine card
+- filter wine cards by selected parameters
 
 Features to be developed:
--- adding pictures to a wine card and storing them on server
+- adding pictures to a wine card and storing them on server
 
 
 # Getting Started with Create React App
