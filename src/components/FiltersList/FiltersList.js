@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
 import FilterCard from '../FilterCard/FilterCard';
 import shortid from 'shortid';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import styles from './FiltersList.module.scss'
 
 const FiltersList = () => {
 
@@ -11,7 +12,7 @@ const FiltersList = () => {
     const correctCategories = categories.filter(category => category !== 'name' && category !== 'id');
 
     return (
-        <div>
+        <div className={styles.filtersList}>
             <h2>Search your wines by:</h2>
             <ul>
               {correctCategories.map(category =>

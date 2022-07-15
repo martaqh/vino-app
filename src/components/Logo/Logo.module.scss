@@ -5,8 +5,10 @@
 .logo {
     font-family: 'Mansalva';
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 40px;
     letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
     
     a {
         text-decoration: none;

@@ -2,9 +2,9 @@ import Button from "../Button/Button";
 import TextInput from "../TextInput/TextInput";
 import styles from './AddWineForm.module.scss';
 import { useDispatch } from "react-redux";
-import { addWine } from "../../redux/winesRedux";
+import { addWine, addWineToServer } from "../../redux/winesRedux";
 import { useState } from "react";
-import { updateServerData } from "../../redux/winesRedux";
+
 import { ImageUploader } from "../ImageUploader/ImageUploader";
 
 
@@ -20,7 +20,7 @@ const AddWineForm = props => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        updateServerData(name, color, grapes, country, shop);
+        addWineToServer(name, color, grapes, country, shop);
         dispatch(addWine({ name, color, grapes, country, shop }));  
     }
 

@@ -13,7 +13,7 @@ const TextInput = props => {
 
     return (
         <div>
-            <input type="text" list={props.category} onChange={props.onChange} />
+            <input type="text" list={props.category} value={props.value} onChange={props.onChange} />
             <datalist id={props.category}>
             {sortedInstances.map(instance =>
                 <option key={shortid()} value={instance}>{instance}</option>)}

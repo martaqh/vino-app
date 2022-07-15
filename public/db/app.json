@@ -1,20 +1,14 @@
 {
   "wines": [
     {
-      "name": "Tygrys",
-      "color": "red",
-      "grapes": [
-        "Carmenere"
-      ],
-      "country": "Chile",
-      "shop": "Lidl",
-      "id": "aFbI4hC"
-    },
-    {
       "name": "Z drabinką",
       "color": "red",
       "grapes": [
-        "Primitivo di Manduria"
+        [
+          [
+            "Primitivo di Manduria"
+          ]
+        ]
       ],
       "country": "Italy",
       "shop": "Rossmann",
@@ -24,7 +18,7 @@
       "name": "Koza",
       "color": "red",
       "grapes": [
-        "Cabernet Franc"
+        "Castelao"
       ],
       "country": "Chile",
       "shop": "Lidl",
@@ -41,20 +35,12 @@
       "id": "M3zxouJ"
     },
     {
-      "name": "Madame Bobalu",
+      "name": "Picadeiro Reserva",
       "color": "red",
       "grapes": [
-        "Bobal"
-      ],
-      "country": "Spain",
-      "shop": "Kondrat/Słowicza",
-      "id": "NI7mFD1"
-    },
-    {
-      "name": "Picadeiro",
-      "color": "red",
-      "grapes": [
-        "Touriga Nacional"
+        [
+          "Touriga Nacional"
+        ]
       ],
       "country": "Portugal",
       "shop": "Kondrat/Słowicza",
@@ -84,7 +70,7 @@
       "name": "Rio Lilo",
       "color": "white",
       "grapes": [
-        ""
+        "Airen"
       ],
       "country": "Spain",
       "shop": "Kondrat/Słowicza",
@@ -130,6 +116,16 @@
       "country": "Portugal",
       "shop": "Madeira",
       "id": "O_SfzdS"
+    },
+    {
+      "name": "Vinuva",
+      "color": "red",
+      "grapes": [
+        "Nero d'Avola"
+      ],
+      "country": "Italy",
+      "shop": "Delikatesy Centrum",
+      "id": "iahK0p8"
     }
   ]
 }

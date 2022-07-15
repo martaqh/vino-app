@@ -2,8 +2,9 @@ import styles from './FilterCard.module.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import shortid from 'shortid';
 import { addFilterParam } from '../../redux/filtersRedux';
-
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlobe, faLeaf, faShoppingBasket, faTint } from '@fortawesome/free-solid-svg-icons';
 
 const FilterCard = props => {
     
@@ -25,8 +26,19 @@ const FilterCard = props => {
     const [optionSelected, setOptionSelected] = useState('');
         
     filterObject[props.category] = optionSelected
-        console.log(filterObject)
+
+
+    const icons = {
+        color: faTint,
+        grapes: faLeaf,
+        country: faGlobe,
+        shop: faShoppingBasket,
+      }
     
+      console.log(icons)
+   //   for (let icon of icons) {
+    //    console.log(icon)
+     // }
 
     const handleChange = e => {
         e.preventDefault();
@@ -38,18 +50,20 @@ const FilterCard = props => {
 
     return (
         <li className={styles.filterCard}>
-            <p className={styles.filterCard__name}>{props.category}</p>
-            <button className={styles.goButton}><span className='fa fa-angle-double-right'></span></button>
-            <select className="form-select"
+            <FontAwesomeIcon icon={icons[props.category]} />
+            <label className={styles.filterCard__name}>{props.category}</label>
+            
+                <select className="form-select"
                     value= {optionSelected}
                    onChange={handleChange}
                     >
                 <option>{props.currentStatus}</option>
                 {
-                sortedInstances.map(instance => <option key={shortid()} value={instance} >{instance}</option>)
+                sortedInstances.map(instance => <option key={shortid()} value={instance}>{instance}</option>)
                 
             }
-            </select>
+                </select>
+            
         </li>
     )
 }
