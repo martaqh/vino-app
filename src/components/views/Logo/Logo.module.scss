@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Merienda+One&display=swap');
+@import '../../../styles/settings.scss';
+
+
+.logo {
+    font-family: 'Mansalva';
+    margin-bottom: 50px;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    
+    a {
+        text-decoration: none;
+        color: $color-text;
+    }
+
+
+    span {
+        text-transform: uppercase;
+        color: $color-brand;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+}

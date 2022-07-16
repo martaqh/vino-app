@@ -1,0 +1,40 @@
+@import '../../../styles/settings.scss';
+
+.buttonlikeLink {
+    
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: $radius-base;
+    cursor: pointer;
+
+    &.basic {
+        background-color: $color-brand;
+
+        a {
+            color: $color-text-reverse;
+        }
+        
+    }
+
+    &.reverse {
+        background-color: $color-cards;
+
+        a {
+            color: $color-brand;
+        }
+    }
+
+
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        text-decoration: none;
+    }
+}

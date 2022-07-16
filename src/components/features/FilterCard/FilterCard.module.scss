@@ -1,0 +1,44 @@
+@import '../../../styles/settings.scss';
+
+.filterCard {
+    background-color: $color-cards;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+    button {
+        margin-right: 10px;
+        border: none;
+        background-color: #edebeb;
+        cursor: pointer;
+        
+    }
+
+    select {
+        background-color: inherit;
+        border-radius: $radius-base;
+        border-color: $color-brand;
+        width: 200px;
+        height: 50px;
+        padding-left: 20px;
+        appearance: none;
+        font-family: $font-main;
+        
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+}
+
+.filterCard__name {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+

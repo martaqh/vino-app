@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+
+.wineCard {
+    background-color: $color-cards;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+
+    h4 {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    section {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 15px;
+        
+    }
+
+    p {
+        margin-left: 20px;
+        
+    }
+
+}

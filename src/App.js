@@ -1,11 +1,11 @@
 
-import Logo from './components/Logo/Logo'
+import Logo from './components/views/Logo/Logo'
 import styles from './App.module.scss';
-import WineList from './components/WineList/WineList';
-import AddWineForm from './components/AddWineForm/AddWineForm';
-import Home from './components/Home/Home';
-import Container from './components/Container/Container';
-import SearchResultsPage from './components/SearchResultsPage/SearchResultsPage';
+import WineList from './components/views/WineList/WineList';
+import AddWineForm from './components/features/AddWineForm/AddWineForm';
+import Home from './components/pages/Home/Home';
+import Container from './components/common/Container/Container';
+import SearchResultsPage from './components/pages/SearchResultsPage/SearchResultsPage';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
