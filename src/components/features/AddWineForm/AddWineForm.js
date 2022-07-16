@@ -12,11 +12,23 @@ const AddWineForm = props => {
     const dispatch = useDispatch();
     const [name, setName] = useState('');
     const [color, setColor] = useState('');
-    const [grapes, setGrapes] = useState([]);
+    const [grapes, setGrapes] = useState('');
     const [country, setCountry] = useState('');
     const [shop, setShop] = useState('');
+    
+    const [counter, setCounter] = useState(0);
+    
+    console.log(shop)
 
     console.log(grapes);
+    console.log(grapes[counter])
+
+    const addInput = e => {
+        e.preventDefault();
+        setCounter(counter + 1);
+        console.log('I was clicked')
+        console.log(counter)
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -28,7 +40,9 @@ const AddWineForm = props => {
         <form className={styles.addWineForm} onSubmit={handleSubmit} >  
             <label>Wine name:</label><TextInput category="name" value={name} onChange={e => setName(e.target.value)} />
             <label>Color:</label><TextInput category="color" value={color} onChange={e => setColor(e.target.value)} />
-            <label>Grapes:</label><TextInput category="grapes" value={grapes} onChange={e => setGrapes(e.target.value)} />
+            <label>Grapes:</label><TextInput category="grapes" value={grapes} onSubmit={e => setGrapes(e.target.value)} />
+            <button onClick={addInput}>Add more grape varieties</button>
+            {counter > 0 ? <div><label>Grapes:</label><TextInput category="grapes" value={grapes[counter]} onSubmit={e => setGrapes(current => [...current, e.target.value])} /></div> : null }
             <label>Country:</label><TextInput category="country" value={country} onChange={e => setCountry(e.target.value)} />
             <label>Where to buy:</label><TextInput category="shop" value={shop} onChange={e => setShop(e.target.value)} />
             <label>Add picture of the label:</label><ImageUploader />

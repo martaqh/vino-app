@@ -7,7 +7,6 @@ import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
 
 
 const SearchResultsPage = () => {
-
     const getAllWinesParams = ({ wines }) => wines.map(wine => Object.values(wine));
     const allWinesParams = useSelector(state => getAllWinesParams(state));
     const flattenWinesParams = allWinesParams.map(wine => wine.flat(1))
@@ -15,17 +14,20 @@ const SearchResultsPage = () => {
 
     const getAllFilters = ({ filters }) => Object.values(filters);
     const allFilters = useSelector(state => getAllFilters(state));
+    console.log(allFilters)
     const correctFilters = allFilters.filter(filter => filter !== '')
+    console.log(correctFilters)
     
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const findMatchingWines = () => {
      const matchingWines = flattenWinesParams.filter(wine => correctFilters.every(element => wine.includes(element)))
-      return matchingWines;
-    }
+     return matchingWines;
+    }   
 
     const allMatchingWines = findMatchingWines();
+    console.log(allMatchingWines)
     const matchingWinesIds = allMatchingWines.map(wine => wine[wine.length - 1]);
    
     

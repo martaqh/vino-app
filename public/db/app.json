@@ -3,13 +3,7 @@
     {
       "name": "Z drabinką",
       "color": "red",
-      "grapes": [
-        [
-          [
-            "Primitivo di Manduria"
-          ]
-        ]
-      ],
+      "grapes": "Primitivo di Manduria",
       "country": "Italy",
       "shop": "Rossmann",
       "id": "VLGdT3p"
@@ -17,19 +11,15 @@
     {
       "name": "Koza",
       "color": "red",
-      "grapes": [
-        "Castelao"
-      ],
+      "grapes": "Castelao",
       "country": "Chile",
       "shop": "Lidl",
       "id": "Y5i6QMf"
     },
     {
-      "name": "Rosario",
+      "name": "Rosario Selection",
       "color": "red",
-      "grapes": [
-        "Touriga Nacional"
-      ],
+      "grapes": "Touriga Nacional",
       "country": "Portugal",
       "shop": "Lidl",
       "id": "M3zxouJ"
@@ -37,95 +27,10 @@
     {
       "name": "Picadeiro Reserva",
       "color": "red",
-      "grapes": [
-        [
-          "Touriga Nacional"
-        ]
-      ],
+      "grapes": "Touriga Nacional",
       "country": "Portugal",
       "shop": "Kondrat/Słowicza",
       "id": "3P8gNOG"
-    },
-    {
-      "name": "Adega do Monte",
-      "color": "red",
-      "grapes": [
-        "Touriga Nacional"
-      ],
-      "country": "Portugal",
-      "shop": "Kondrat/Słowicza",
-      "id": "gGzbkhq"
-    },
-    {
-      "name": "Momo",
-      "color": "white",
-      "grapes": [
-        "Sauvignon Blanc"
-      ],
-      "country": "New Zeland",
-      "shop": "Kondrat/Słowicza",
-      "id": "7h4mOCe"
-    },
-    {
-      "name": "Rio Lilo",
-      "color": "white",
-      "grapes": [
-        "Airen"
-      ],
-      "country": "Spain",
-      "shop": "Kondrat/Słowicza",
-      "id": "thjaFz2"
-    },
-    {
-      "name": "Nero d'oro",
-      "color": "red",
-      "grapes": [
-        "Nero d'Avola"
-      ],
-      "country": "Italy",
-      "shop": "Delikatesy Centrum",
-      "id": "xQ2RaV_"
-    },
-    {
-      "name": "Coloma z maczkiem",
-      "color": "red",
-      "grapes": [
-        "Tempranillo"
-      ],
-      "country": "Spain",
-      "shop": "Kondrat/Słowicza",
-      "id": "ZJnh9M3"
-    },
-    {
-      "name": "Heredidade de Gambia",
-      "color": "red",
-      "grapes": [
-        "Touriga Nacional",
-        "Touriga Franca"
-      ],
-      "country": "Portugal",
-      "shop": "Madeira",
-      "id": "qWPqV9A"
-    },
-    {
-      "name": "Dwie kaczki",
-      "color": "red",
-      "grapes": [
-        "Castelao"
-      ],
-      "country": "Portugal",
-      "shop": "Madeira",
-      "id": "O_SfzdS"
-    },
-    {
-      "name": "Vinuva",
-      "color": "red",
-      "grapes": [
-        "Nero d'Avola"
-      ],
-      "country": "Italy",
-      "shop": "Delikatesy Centrum",
-      "id": "iahK0p8"
     }
   ]
 }

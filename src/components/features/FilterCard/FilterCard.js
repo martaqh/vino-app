@@ -34,11 +34,7 @@ const FilterCard = props => {
         country: faGlobe,
         shop: faShoppingBasket,
       }
-    
-      console.log(icons)
-   //   for (let icon of icons) {
-    //    console.log(icon)
-     // }
+ 
 
     const handleChange = e => {
         e.preventDefault();

@@ -4,6 +4,7 @@ import shortid from 'shortid';
 import styles from './FiltersList.module.scss'
 import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom'
 
 const FiltersList = () => {
 
@@ -12,6 +13,14 @@ const FiltersList = () => {
     const categories = [...new Set(allCategories.flat(1))];
     const correctCategories = categories.filter(category => category !== 'name' && category !== 'id');
 
+    const navigate = useNavigate();
+
+    const handleClick = e => {
+        e.preventDefault();
+        navigate('/search-results')
+
+    }
+    
     return (
         <div className={styles.filtersList}>
             <h2>Search your wines by:</h2>
@@ -24,6 +33,7 @@ const FiltersList = () => {
                 icon={faSearch}
                 type="basic"
                 size="small"
+                onClick={handleClick}
             >Search</ButtonlikeLink>
         </div>  
     )
