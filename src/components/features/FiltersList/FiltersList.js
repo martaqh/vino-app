@@ -1,8 +1,9 @@
 import { useSelector } from 'react-redux';
-import FilterCard from '../../features/FilterCard/FilterCard';
+import FilterCard from '../FilterCard/FilterCard';
 import shortid from 'shortid';
-import { Link } from 'react-router-dom';
 import styles from './FiltersList.module.scss'
+import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const FiltersList = () => {
 
@@ -18,7 +19,12 @@ const FiltersList = () => {
               {correctCategories.map(category =>
               <FilterCard key={shortid()} category={category}>{category}</ FilterCard>)}
             </ul>
-            <Link to="/search-results">Search</Link>
+            <ButtonlikeLink
+                href="/search-results"
+                icon={faSearch}
+                type="basic"
+                size="small"
+            >Search</ButtonlikeLink>
         </div>  
     )
 }

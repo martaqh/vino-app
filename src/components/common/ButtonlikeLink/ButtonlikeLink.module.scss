@@ -7,17 +7,35 @@
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.05em;
-    margin-top: 30px;
+    margin: 30px 0;
     border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: $radius-base;
     cursor: pointer;
+
+    
 
     &.basic {
         background-color: $color-brand;
 
         a {
             color: $color-text-reverse;
+        }
+
+        &.small {
+    
+            padding: 10px 20px;
+
+            a {
+                justify-content: center;
+            }
+            
+
+            p {
+                margin: 0;
+                padding: 0 15px;
+            }
+
         }
         
     }
@@ -30,11 +48,24 @@
         }
     }
 
+    &.simple {
+        box-shadow: none;
+        background-color: $color-text-reverse;
+        width: 50%;
+        color: $color-text-light;
+
+        p {
+            margin: 0;
+        }
+    }
+
 
     a {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         text-decoration: none;
+
+       
     }
 }

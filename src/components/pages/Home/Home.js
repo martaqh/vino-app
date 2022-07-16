@@ -1,6 +1,6 @@
 
 import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
-import FiltersList from '../../views/FiltersList/FiltersList';
+import FiltersList from '../../features/FiltersList/FiltersList';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 

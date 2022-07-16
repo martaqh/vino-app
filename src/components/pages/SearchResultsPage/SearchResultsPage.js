@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import shortid from 'shortid';
 import { clearFilters } from '../../../redux/filtersRedux';
 import { useNavigate } from 'react-router-dom';
+import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
 
 
 const SearchResultsPage = () => {
@@ -53,7 +54,11 @@ const SearchResultsPage = () => {
     return (
         <section>
              <h3>Search results:</h3>
-             <button onClick={handleClick}>(new search)</button>
+             <ButtonlikeLink
+                onClick={handleClick}
+                size="small"
+                type="simple"
+             >new search</ButtonlikeLink>
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
         
         </section>  
@@ -61,7 +66,11 @@ const SearchResultsPage = () => {
     return (
         <section>
             <h3>Sorry, no matching wines found in your collection</h3>
-            <button onClick={handleClick}>(new search)</button>
+            <ButtonlikeLink
+                onClick={handleClick}
+                size="small"
+                type="simple"
+             >new search</ButtonlikeLink>
         </section>
         
     )

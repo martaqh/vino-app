@@ -4,12 +4,12 @@ import clsx from 'clsx';
 
 const ButtonlikeLink = props => {
     return (
-        <div className={clsx(styles.buttonlikeLink, styles[props.type])}>
+        <div className={clsx(styles.buttonlikeLink, styles[props.type], styles[props.size])}>
             <a href={props.href} >
-            <p>{props.children}</p>
-            {props.icon ?
-            <span><FontAwesomeIcon icon={props.icon} /></span> : null
-            }
+                <p>{props.children}</p>
+                {props.icon ?
+                <span><FontAwesomeIcon icon={props.icon} /></span> : null
+                }
             </a>  
         </div>
         

@@ -50,19 +50,25 @@ const FilterCard = props => {
 
     return (
         <li className={styles.filterCard}>
-            <FontAwesomeIcon icon={icons[props.category]} />
-            <label className={styles.filterCard__name}>{props.category}</label>
-            
+            <div className={styles.filterCard__label}>
+                <FontAwesomeIcon icon={icons[props.category]} />
+                <label className={styles.filterCard__name}>{props.category}</label>
+            </div>
+            <div className={styles.filterCard__select}>
                 <select className="form-select"
-                    value= {optionSelected}
-                   onChange={handleChange}
-                    >
-                <option>{props.currentStatus}</option>
-                {
-                sortedInstances.map(instance => <option key={shortid()} value={instance}>{instance}</option>)
-                
-            }
+                        value= {optionSelected}
+                    onChange={handleChange}
+                        >
+                    <option>{props.currentStatus}</option>
+                    {
+                    sortedInstances.map(instance => <option key={shortid()} value={instance}>{instance}</option>)
+                    
+                    }
                 </select>
+            </div>
+            
+            
+                
             
         </li>
     )
