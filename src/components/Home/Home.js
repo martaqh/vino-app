@@ -1,12 +1,27 @@
-import ButtonAddWine from '../ButtonAddWine/ButtonAddWine';
-import ButtonShowWineList from '../ButtonShowWineList/ButtonShowWineList';
+
+import ButtonlikeLink from '../ButtonlikeLink/ButtonlikeLink';
 import FiltersList from '../FiltersList/FiltersList';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const Home = () => {
     return (
         <main>
-            <ButtonAddWine />
-            <ButtonShowWineList />
+            <ButtonlikeLink
+                href="/add-wine-form"
+                icon={faPlus}
+                type="basic"
+            >
+                Add new wine
+            </ ButtonlikeLink>
+            <ButtonlikeLink
+                href="/wine-list"
+                icon={faChevronRight}
+                type="reverse"
+            >
+                Show my wine collection
+            </ ButtonlikeLink>
             <FiltersList />
         </main>    
     )
