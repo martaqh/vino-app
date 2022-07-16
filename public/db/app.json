@@ -31,6 +31,16 @@
       "country": "Portugal",
       "shop": "Kondrat/Słowicza",
       "id": "3P8gNOG"
+    },
+    {
+      "name": "Momo",
+      "color": "white",
+      "grapes": 
+        "Sauvignon Blanc"
+      ,
+      "country": "New Zeland",
+      "shop": "Kondrat/Słowicza",
+      "id": "AK_doz8"
     }
   ]
 }
