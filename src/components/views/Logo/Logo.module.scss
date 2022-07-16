@@ -20,7 +20,12 @@
         text-transform: uppercase;
         color: $color-brand;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 40px;
+
+        span {
+            color: $color-accent-dark;
+            font-size: 50px;
+        }
     }
 
 }

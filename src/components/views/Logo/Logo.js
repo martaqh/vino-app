@@ -5,7 +5,7 @@ const Logo = () => {
     return (
         <div className={styles.logo}>
             <a href="/">
-            caber<span>.net</span>
+            caber<span><span>.</span>net</span>
             </a>
         </div>
     )
