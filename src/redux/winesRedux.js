@@ -5,12 +5,14 @@ const createActionName = actionName => `app/wines/${actionName}`;
 const UPLOAD_WINES = createActionName('UPLOAD_WINES');
 const ADD_WINE = createActionName('ADD_WINE');
 const REMOVE_WINE = createActionName('REMOVE_WINE');
+const EDIT_WINE = createActionName('EDIT_WINE');
 
 
 // action creators
 export const uploadWines = payload => ({type: UPLOAD_WINES, payload });
 export const addWine = payload => ({type: ADD_WINE, payload });
 export const removeWine = payload => ({type: REMOVE_WINE, payload });
+export const editWine = payload => ({type: EDIT_WINE, payload });
 
 
 export const fetchWines = () => {
@@ -21,7 +23,7 @@ export const fetchWines = () => {
     }
   };
 
-  export const updateServerData = (name, color, grapes, country, shop) => {
+  export const addWineToServer = (name, color, grapes, country, shop) => {
     const newWine = {
         method: 'POST',
         headers: {
@@ -54,6 +56,24 @@ export const fetchWines = () => {
     fetch('http://localhost:3131/wines/' + wineId, options)
   }
 
+  export const editWineOnServer = (name, color, grapes, country, shop, wineId) => {
+    const editedWine = {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          color: color,
+          grapes: [grapes],
+          country: country,
+          shop: shop
+        }),
+      };
+      
+      fetch('http://localhost:3131/api/wines' + wineId, editedWine)
+  }
+
 
 
 const winesReducer = (statePart = [], action) => {
@@ -65,6 +85,8 @@ const winesReducer = (statePart = [], action) => {
         return {wines: [...statePart, {...action.payload}]}
       case REMOVE_WINE:
         return statePart.filter(wine => wine.id !== action.payload)
+      case EDIT_WINE:
+        return statePart.map(wine => wine.id === action.payload.wineId ? action.payload : wine )
       default:
         return statePart;
     };
