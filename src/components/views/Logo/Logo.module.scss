@@ -4,8 +4,7 @@
 
 .logo {
     font-family: 'Mansalva';
-    margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 0.1em;
     display: flex;
     justify-content: center;
@@ -17,10 +16,11 @@
 
 
     span {
-        text-transform: uppercase;
-        color: $color-brand;
-        font-weight: 700;
-        font-size: 40px;
+        
+        color: $color-text-light;
+        text-decoration: line-through;
+        font-weight: 400;
+        font-size: 30px;
 
         span {
             color: $color-accent-dark;

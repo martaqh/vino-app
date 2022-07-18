@@ -1,14 +1,6 @@
 {
   "wines": [
     {
-      "name": "Z drabinką",
-      "color": "red",
-      "grapes": "Primitivo di Manduria",
-      "country": "Italy",
-      "shop": "Rossmann",
-      "id": "VLGdT3p"
-    },
-    {
       "name": "Koza",
       "color": "red",
       "grapes": "Castelao",
@@ -35,9 +27,7 @@
     {
       "name": "Momo",
       "color": "white",
-      "grapes": 
-        "Sauvignon Blanc"
-      ,
+      "grapes": "Sauvignon Blanc",
       "country": "New Zeland",
       "shop": "Kondrat/Słowicza",
       "id": "AK_doz8"

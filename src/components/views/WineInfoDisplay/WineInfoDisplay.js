@@ -7,25 +7,30 @@ const WineInfoDisplay = props => {
     console.log(props);
     return (
         <div className={styles.wineCard} >
-                       <section>
-                           <FontAwesomeIcon icon={faTint} />
-                           <p>{props.color}</p>
-                       </section>
-                       <section>
-                           <FontAwesomeIcon icon={faLeaf} />
-                           <p>{props.grapes}</p>
-                       </section>
-                       
-                       <section>
-                           <FontAwesomeIcon icon={faGlobe} />
-                           <p>{props.country}</p>
-                       </section>
-           
-                       <section>
-                           <FontAwesomeIcon icon={faShoppingBasket} />
-                           <p>{props.shop}</p>
-                       </section>                               
-                   </div>
+            <ul>
+                <li>
+                    <section>
+                        <FontAwesomeIcon icon={faTint} />
+                        <p>{props.color}</p>
+                    </section>
+                    <section>
+                        <FontAwesomeIcon icon={faLeaf} />
+                        <p>{props.grapes}</p>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <FontAwesomeIcon icon={faGlobe} />
+                        <p>{props.country}</p>
+                    </section>
+        
+                    <section>
+                        <FontAwesomeIcon icon={faShoppingBasket} />
+                        <p>{props.shop}</p>
+                    </section> 
+                </li>
+            </ul>                                      
+        </div>
     )
 }
 

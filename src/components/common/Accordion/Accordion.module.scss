@@ -6,19 +6,16 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+    box-shadow: $shadow-base;
     border-radius: $radius-base;
 
     @media only screen and (max-width: 480px) {
         box-shadow: none;
-
+        border: 1px solid $color-brand;
     }
 }
 
 .accordionTitle {
-    
-    margin-top: 10px;
-    padding: 5px;
     display: flex;
     justify-content: space-between;
     
