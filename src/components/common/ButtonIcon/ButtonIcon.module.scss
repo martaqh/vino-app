@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.buttonIcon {
+    padding: 15px;
+    border: none;
+    border-radius: $radius-base;
+    width: 30%;
+    background-color: $color-cards;
+    box-shadow: $shadow-base;
+    cursor: pointer;
+    
+}
+
+.edit {
+    color: $color-brand;
+}
+
+.trash {
+    color: red;
+}
+
