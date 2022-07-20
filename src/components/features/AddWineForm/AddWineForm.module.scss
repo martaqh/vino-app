@@ -3,10 +3,24 @@
 .addWineForm {
     display: flex;
     flex-direction: column;
+
+    h3 {
+        text-align: center;
+        font-weight: 600;
+        color: $color-brand;
+        margin-bottom: 30px;
+    }
+
+    .wineParam {
+        margin: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
     
     label {
-        margin-top: 20px;
-        font-size: 14px;
+        font-size: 18px;
     }
+
 
 }
