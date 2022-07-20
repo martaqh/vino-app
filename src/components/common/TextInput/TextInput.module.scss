@@ -1,6 +1,13 @@
 @import '../../../styles/settings.scss';
 
-.input {
-    height: 2rem;
-    border-color: $color-text;
+.textInput {
+    height: 40px;
+
+    input {
+        height: 100%;
+        border-color: $color-brand;
+        border-radius: 24px;
+        width: 200px;
+    }
+    
 }

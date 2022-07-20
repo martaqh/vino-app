@@ -1,9 +1,9 @@
-//import styles from './TextInput.module.scss';
+import styles from './TextInput.module.scss';
 import { useSelector } from "react-redux";
 import shortid from "shortid";
 
 const TextInput = props => {
-    console.log(props.category);
+    console.log(props.className);
     const getAllOfKind = ({ wines }) => wines.map(wine => wine[props.category]);
     const allOfKind = useSelector(state => getAllOfKind(state));
     const flattenAllOfKind = allOfKind.flat(1);
@@ -12,7 +12,7 @@ const TextInput = props => {
     const sortedInstances = correctInstances.sort();
 
     return (
-        <div>
+        <div className={styles[props.className]}>
             <input type="text" list={props.category} value={props.value} onChange={props.onChange} />
             <datalist id={props.category}>
             {sortedInstances.map(instance =>
