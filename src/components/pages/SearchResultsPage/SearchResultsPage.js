@@ -62,6 +62,13 @@ const SearchResultsPage = () => {
                 type="simple"
              >new search</ButtonlikeLink>
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
+
+        <ButtonlikeLink
+                href="/"
+                type="basic"
+                size="small"
+            >
+                 Wróć do strony głównej</ButtonlikeLink>
         
         </section>  
     )

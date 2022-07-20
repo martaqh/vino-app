@@ -9,6 +9,7 @@ const Success = props => {
             <ButtonlikeLink
                 href="/"
                 type="basic"
+                size="small"
             >
                  Wróć do strony głównej</ButtonlikeLink>
         </main>
