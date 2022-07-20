@@ -1,3 +1,5 @@
+import { API_URL } from "../config";
+
 // selectors
 
 // actions
@@ -17,13 +19,13 @@ export const editWine = payload => ({type: EDIT_WINE, payload });
 
 export const fetchWines = () => {
     return (dispatch) => {
-      fetch('http://localhost:3131/api/wines')
+      fetch(API_URL + '/wines')
       .then(res => res.json())
       .then(wines => dispatch(uploadWines(wines)));
     }
   };
 
-  export const addWineToServer = (name, color, grapes, country, shop) => {
+  export const addWineToServer = (name, color, grapes, country, shop) => {    
     const newWine = {
         method: 'POST',
         headers: {
@@ -38,7 +40,7 @@ export const fetchWines = () => {
         }),
       };
       
-      fetch('http://localhost:3131/api/wines', newWine)
+      fetch(API_URL + '/wines', newWine)
   }
 
   export const removeWineFromServer = (wineId) => {
@@ -53,7 +55,7 @@ export const fetchWines = () => {
       }),
     };
     
-    fetch('http://localhost:3131/wines/' + wineId, options)
+    fetch(API_URL + '/wines/' + wineId, options)
   }
 
   export const editWineOnServer = (name, color, grapes, country, shop, wineId) => {
@@ -71,7 +73,7 @@ export const fetchWines = () => {
         }),
       };
       
-      fetch('http://localhost:3131/api/wines/' + wineId, editedWine)
+      fetch(API_URL + '/wines/' + wineId, editedWine)
   }
 
 
