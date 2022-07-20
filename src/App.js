@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchWines } from './redux/winesRedux';
+import Success from './components/pages/Success/Success';
 
 
 
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/add-wine-form" element={<AddWineForm />} />
                 <Route path="/wine-list" element={<WineList />} />
                 <Route path="/search-results" element={<SearchResultsPage />} />
+                <Route path="/success" element={<Success />} />
         </Routes>
         
       </Container>
