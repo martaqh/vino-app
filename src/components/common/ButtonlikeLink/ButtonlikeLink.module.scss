@@ -15,10 +15,7 @@
 
     @media only screen and (max-width: 480px) {
         box-shadow: none;
-        border: 1px solid $color-brand;
     }
-
-    
 
     &.basic {
         background-color: $color-brand;
@@ -50,6 +47,10 @@
 
         a {
             color: $color-brand;
+        }
+
+        @media only screen and (max-width: 480px) {
+            border: 1px solid $color-brand;
         }
     }
 
