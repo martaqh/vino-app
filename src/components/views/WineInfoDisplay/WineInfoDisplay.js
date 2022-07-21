@@ -11,22 +11,22 @@ const WineInfoDisplay = props => {
                 <li>
                     <section>
                         <FontAwesomeIcon icon={faTint} />
-                        <p>{props.color}</p>
+                        <p>{props.kolor}</p>
                     </section>
                     <section>
                         <FontAwesomeIcon icon={faLeaf} />
-                        <p>{props.grapes}</p>
+                        <p>{props.szczep}</p>
                     </section>
                 </li>
                 <li>
                     <section>
                         <FontAwesomeIcon icon={faGlobe} />
-                        <p>{props.country}</p>
+                        <p>{props.kraj}</p>
                     </section>
         
                     <section>
                         <FontAwesomeIcon icon={faShoppingBasket} />
-                        <p>{props.shop}</p>
+                        <p>{props.sklep}</p>
                     </section> 
                 </li>
             </ul>                                      

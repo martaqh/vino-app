@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe, faLeaf, faShoppingBasket, faTint } from '@fortawesome/free-solid-svg-icons';
 
 const FilterCard = props => {
+
+    console.log(props)
     
     const getAllOfKind = ({wines}) => wines.map(wine => wine[props.category]);
     const allOfKind = useSelector(state => getAllOfKind(state));

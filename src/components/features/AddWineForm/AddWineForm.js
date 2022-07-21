@@ -25,9 +25,18 @@ const AddWineForm = props => {
 
     const navigate = useNavigate();
 
+    const capitalize = str => {
+        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    }
+
     const handleSubmit = e => {
-        e.preventDefault();
-        addWineToServer(name, color, grapes, country, shop);
+    
+        addWineToServer(capitalize(name),
+                        capitalize(color),
+                        capitalize(grapes),
+                        capitalize(country),
+                        capitalize(shop)
+                        );
         dispatch(addWine({ name, color, grapes, country, shop }));
         navigate('/success');
     }
@@ -39,7 +48,7 @@ const AddWineForm = props => {
                 <label>Nazwa:</label>
                 <TextInput
                     className="textInput"
-                    category="name"
+                    category="nazwa"
                     value={name}
                     onChange={e => setName(e.target.value)}
                 />
@@ -48,7 +57,7 @@ const AddWineForm = props => {
                 <label>Kolor:</label>
                 <TextInput
                     className="textInput"
-                    category="color"
+                    category="kolor"
                     value={color}
                     onChange={e => setColor(e.target.value)}
                 />
@@ -57,7 +66,7 @@ const AddWineForm = props => {
                 <label>Szczep:</label>
                 <TextInput
                     className="textInput"
-                    category="grapes"
+                    category="szczep"
                     value={grapes}
                     onChange={e => setGrapes(e.target.value)}
                  />
@@ -66,7 +75,7 @@ const AddWineForm = props => {
                 <label>Kraj:</label>
                 <TextInput
                     className="textInput"
-                    category="country"
+                    category="kraj"
                     value={country}
                     onChange={e => setCountry(e.target.value)} />
 
@@ -75,7 +84,7 @@ const AddWineForm = props => {
                 <label>Sklep:</label>
                 <TextInput
                     className="textInput"
-                    category="shop"
+                    category="sklep"
                     value={shop}
                     onChange={e => setShop(e.target.value)} />
            </div>

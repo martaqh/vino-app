@@ -17,7 +17,7 @@ const WineCard = props => {
 
     const handleDelete = e => {
         e.preventDefault();
-        alert('Are you sure you wish to delete this wine?')
+        alert('Na pewno chcesz usunąć to wino ze swojej kolekcji?')
         console.log(props.id)
         removeWineFromServer(props.id)
         dispatch(removeWine(props.id));
@@ -28,7 +28,7 @@ const WineCard = props => {
     if (isEdited === false)
     return (
             <Accordion {...props} className={styles.wineCard}
-                       title={props.name}
+                       title={props.nazwa}
                        content={
                        <div className={styles.wineCard}>
                             <WineInfoDisplay {...props} />
@@ -44,7 +44,7 @@ const WineCard = props => {
     )
     return (
         <Accordion className={styles.wineCard}
-                       title={props.name}
+                       title={props.nazwa}
                        content={
                         <div>
                             <WineInfoEditionForm {...props} />

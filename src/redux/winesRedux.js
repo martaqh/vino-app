@@ -32,11 +32,11 @@ export const fetchWines = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          name: name,
-          color: color,
-          grapes: grapes,
-          country: country,
-          shop: shop
+          nazwa: name,
+          kolor: color,
+          szczep: grapes,
+          kraj: country,
+          sklep: shop
         }),
       };
       

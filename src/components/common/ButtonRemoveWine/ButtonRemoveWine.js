@@ -10,7 +10,7 @@ const ButtonRemoveWine = props => {
 
     const handleClick = e => {
         e.preventDefault();
-        alert('Are you sure you wish to delete this wine?')
+        alert('Na pewno chcesz usunąć to wino ze swojej kolekcji?')
         console.log(props.wineId)
         removeWineFromServer(props.wineId)
         dispatch(removeWine(props.wineId));
