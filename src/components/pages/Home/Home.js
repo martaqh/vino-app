@@ -13,14 +13,14 @@ const Home = () => {
                 icon={faPlus}
                 type="basic"
             >
-                Add new wine
+                Dodaj wino
             </ ButtonlikeLink>
             <ButtonlikeLink
                 href="/wine-list"
                 icon={faChevronRight}
                 type="reverse"
             >
-                Show my wine collection
+                Pokaż moją kolekcję
             </ ButtonlikeLink>
             <FiltersList />
         </main>    

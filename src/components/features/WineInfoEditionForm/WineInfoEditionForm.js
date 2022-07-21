@@ -26,6 +26,7 @@ const WineInfoEditionForm = props => {
     return (
         <div>
             <div >
+                <h5>Wprowadź zmiany:</h5>
                     <section>
                     <TextInput category="name" value={name} placeholder={props.name} onChange={e => setName(e.target.value)}/>
                     </section>
@@ -47,7 +48,7 @@ const WineInfoEditionForm = props => {
                            <FontAwesomeIcon icon={faShoppingBasket} />
                            <TextInput category="shop" value={shop} placeholder={props.shop} onChange={e => setShop(e.target.value)} />
                        </section>
-                       <button onClick={handleSubmit}>Save changes</button>
+                       <button onClick={handleSubmit}>Zapisz zmiany</button>
                        
                        
                        

@@ -34,9 +34,9 @@ const AddWineForm = props => {
 
     return (
         <form className={styles.addWineForm} onSubmit={handleSubmit} >
-            <h3>Add a new wine to your collection</h3>
+            <h3>Dodaj kolejne wino do swojej kolekcji</h3>
             <div className={styles.wineParam}>
-                <label>Wine name:</label>
+                <label>Nazwa:</label>
                 <TextInput
                     className="textInput"
                     category="name"
@@ -45,7 +45,7 @@ const AddWineForm = props => {
                 />
             </div>
             <div className={styles.wineParam}>
-                <label>Color:</label>
+                <label>Kolor:</label>
                 <TextInput
                     className="textInput"
                     category="color"
@@ -54,7 +54,7 @@ const AddWineForm = props => {
                 />
            </div>
            <div className={styles.wineParam}>
-                <label>Grapes:</label>
+                <label>Szczep:</label>
                 <TextInput
                     className="textInput"
                     category="grapes"
@@ -63,7 +63,7 @@ const AddWineForm = props => {
                  />
            </div>
            <div className={styles.wineParam}>
-                <label>Country:</label>
+                <label>Kraj:</label>
                 <TextInput
                     className="textInput"
                     category="country"
@@ -72,7 +72,7 @@ const AddWineForm = props => {
 
            </div>
            <div className={styles.wineParam}>
-                <label>Where to buy:</label>
+                <label>Sklep:</label>
                 <TextInput
                     className="textInput"
                     category="shop"
@@ -84,7 +84,7 @@ const AddWineForm = props => {
                 type="basic"
                 size="small"
                 onClick={handleSubmit}
-            >Add wine</ButtonlikeLink>
+            >Dodaj wino</ButtonlikeLink>
         </form>
     )
 }

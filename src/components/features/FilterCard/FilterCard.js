@@ -29,10 +29,10 @@ const FilterCard = props => {
 
 
     const icons = {
-        color: faTint,
-        grapes: faLeaf,
-        country: faGlobe,
-        shop: faShoppingBasket,
+        kolor: faTint,
+        szczep: faLeaf,
+        kraj: faGlobe,
+        sklep: faShoppingBasket,
       }
  
 

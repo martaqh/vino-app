@@ -1,36 +1,44 @@
 {
   "wines": [
     {
-      "name": "Koza",
-      "color": "red",
-      "grapes": "Castelao",
-      "country": "Chile",
-      "shop": "Lidl",
+      "nazwa": "Koza",
+      "kolor": "czerwone",
+      "szczep": "Castelao",
+      "kraj": "Chile",
+      "sklep": "Lidl",
       "id": "Y5i6QMf"
     },
     {
-      "name": "Rosario Selection",
-      "color": "red",
-      "grapes": "Touriga Nacional",
-      "country": "Portugal",
-      "shop": "Lidl",
+      "nazwa": "Rosario Selection",
+      "kolor": "czerwone",
+      "szczep": "Touriga Nacional",
+      "kraj": "Portugalia",
+      "sklep": "Lidl",
       "id": "M3zxouJ"
     },
     {
-      "name": "Picadeiro Reserva",
-      "color": "red",
-      "grapes": "Touriga Nacional",
-      "country": "Portugal",
-      "shop": "Kondrat/Słowicza",
+      "nazwa": "Picadeiro Reserva",
+      "kolor": "czerwone",
+      "szczep": "Touriga Nacional",
+      "kraj": "Portugalia",
+      "sklep": "Kondrat/Słowicza",
       "id": "3P8gNOG"
     },
     {
-      "name": "Momo",
-      "color": "white",
-      "grapes": "Sauvignon Blanc",
-      "country": "New Zeland",
-      "shop": "Kondrat/Słowicza",
+      "nazwa": "Momo",
+      "kolor": "białe",
+      "szczep": "Sauvignon Blanc",
+      "kraj": "Nowa Zelandia",
+      "sklep": "Kondrat/Słowicza",
       "id": "AK_doz8"
+    },
+    {
+      "nazwa": "Foka",
+      "kolor": "czerwone",
+      "szczep": "merlot",
+      "kraj": "Chile",
+      "sklep": "Lidl",
+      "id": "xRYdycs"
     }
   ]
 }

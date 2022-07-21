@@ -55,12 +55,11 @@ const SearchResultsPage = () => {
     if (matchingWines.length > 0)
     return (
         <section>
-             <h3>Search results:</h3>
+             <h3>Wyniki wyszukiwania:</h3>
              <ButtonlikeLink
                 onClick={handleClick}
-                size="small"
                 type="simple"
-             >new search</ButtonlikeLink>
+             >zmień kryteria wyszukiwania</ButtonlikeLink>
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
 
         <ButtonlikeLink
@@ -74,12 +73,11 @@ const SearchResultsPage = () => {
     )
     return (
         <section>
-            <h3>Sorry, no matching wines found in your collection</h3>
+            <h3>Żadne wino z Twojej kolekcji nie spełnia wskazanych kryteriów</h3>
             <ButtonlikeLink
                 onClick={handleClick}
-                size="small"
                 type="simple"
-             >new search</ButtonlikeLink>
+             >zmień kryteria wyszukiwania</ButtonlikeLink>
         </section>
         
     )

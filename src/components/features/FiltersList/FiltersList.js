@@ -11,7 +11,7 @@ const FiltersList = () => {
     const getAllCategories = ({ wines }) => wines.map(wine => Object.keys(wine));
     const allCategories = useSelector(state => getAllCategories(state));
     const categories = [...new Set(allCategories.flat(1))];
-    const correctCategories = categories.filter(category => category !== 'name' && category !== 'id');
+    const correctCategories = categories.filter(category => category !== 'nazwa' && category !== 'id');
 
     const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ const FiltersList = () => {
     
     return (
         <div className={styles.filtersList}>
-            <h2>Search your wines by:</h2>
+            <h2>Szukaj win spełniających kryteria:</h2>
             <ul>
               {correctCategories.map(category =>
               <FilterCard key={shortid()} category={category}>{category}</ FilterCard>)}
@@ -34,7 +34,7 @@ const FiltersList = () => {
                 type="basic"
                 size="small"
                 onClick={handleClick}
-            >Search</ButtonlikeLink>
+            >Szukaj</ButtonlikeLink>
         </div>  
     )
 }
