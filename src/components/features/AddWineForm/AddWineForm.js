@@ -1,4 +1,5 @@
 import ButtonlikeLink from "../../common/ButtonlikeLink/ButtonlikeLink";
+import Button from "../../common/Button/Button";
 import TextInput from "../../common/TextInput/TextInput";
 import styles from './AddWineForm.module.scss';
 import { useDispatch } from "react-redux";
@@ -88,12 +89,11 @@ const AddWineForm = props => {
                     value={shop}
                     onChange={e => setShop(e.target.value)} />
            </div>
-            <ButtonlikeLink
-                href="/"
+            <Button
                 type="basic"
                 size="small"
                 onClick={handleSubmit}
-            >Dodaj wino</ButtonlikeLink>
+            >Dodaj wino</Button>
         </form>
     )
 }

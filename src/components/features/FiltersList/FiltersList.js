@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import FilterCard from '../FilterCard/FilterCard';
 import shortid from 'shortid';
 import styles from './FiltersList.module.scss'
-import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
+import Button from '../../common/Button/Button';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom'
 
@@ -28,13 +28,12 @@ const FiltersList = () => {
               {correctCategories.map(category =>
               <FilterCard key={shortid()} category={category}>{category}</ FilterCard>)}
             </ul>
-            <ButtonlikeLink
-                href="/search-results"
+            <Button
                 icon={faSearch}
                 type="basic"
                 size="small"
                 onClick={handleClick}
-            >Szukaj</ButtonlikeLink>
+            >Szukaj</Button>
         </div>  
     )
 }

@@ -4,6 +4,7 @@ import shortid from 'shortid';
 import { clearFilters } from '../../../redux/filtersRedux';
 import { useNavigate } from 'react-router-dom';
 import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
+import Button from '../../common/Button/Button';
 
 
 const SearchResultsPage = () => {
@@ -56,10 +57,11 @@ const SearchResultsPage = () => {
     return (
         <section>
              <h3>Wyniki wyszukiwania:</h3>
-             <ButtonlikeLink
+             <Button
                 onClick={handleClick}
                 type="simple"
-             >zmień kryteria wyszukiwania</ButtonlikeLink>
+             >zmień kryteria wyszukiwania</Button>
+             
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
 
         <ButtonlikeLink
@@ -74,10 +76,10 @@ const SearchResultsPage = () => {
     return (
         <section>
             <h3>Żadne wino z Twojej kolekcji nie spełnia wskazanych kryteriów</h3>
-            <ButtonlikeLink
+            <Button
                 onClick={handleClick}
                 type="simple"
-             >zmień kryteria wyszukiwania</ButtonlikeLink>
+             >zmień kryteria wyszukiwania</Button>
         </section>
         
     )

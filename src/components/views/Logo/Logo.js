@@ -1,12 +1,13 @@
-import styles from './Logo.module.scss'
+import styles from './Logo.module.scss';
+import { Link } from 'react-router-dom';
 
 
 const Logo = () => {
     return (
         <div className={styles.logo}>
-            <a href="/">
+            <Link to="/">
             <p>wina <span>Tuska</span> Demira</p>
-            </a>
+            </Link>
         </div>
     )
 }
