@@ -31,7 +31,6 @@ const FiltersList = () => {
             <Button
                 icon={faSearch}
                 type="basic"
-                size="small"
                 onClick={handleClick}
             >Szukaj</Button>
         </div>  

@@ -2,15 +2,37 @@
 
 .button {
     background-color: $color-brand;
-    padding: 15px;
-    color: $color-text-reverse;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 0.05em;
-    margin-top: 30px;
-    border: none;
-    box-shadow: $shadow-base;
-    cursor: pointer;
-    text-align: center;
+    font-family: $font-main;
+    margin: 20px 0;
+    border-radius: $radius-base;
+    padding: 10px;
+    
+    
+    button {
+        width: 100%;
+        background-color: inherit;
+        border: none;
+        border-radius: $radius-base;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+       
+    }
+
+    p, span {
+        color: $color-text-reverse; 
+        font-family: $font-main;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+
+    span {
+        margin: 0 10px;
+    }
+
+    
 }
