@@ -1,0 +1,24 @@
+@import '../../../styles/settings.scss';
+
+.editionForm {
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+        text-indent: 15px;
+    }
+    
+
+
+    section {
+        display: flex;
+        align-items: baseline;
+        margin: 10px 0 10px 15px;
+        text-indent: 20px;
+        
+        span {
+            width: 40px;
+        }
+    }
+
+}

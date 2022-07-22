@@ -11,6 +11,12 @@
         width: 100%;
         text-indent: 20px;
         font-family: $font-main;
+
+        :placeholder-shown {
+            color: green;
+        }
     }
+
+    
     
 }
