@@ -26,8 +26,12 @@ const AddWineForm = props => {
 
     const navigate = useNavigate();
 
-    const capitalize = str => {
-        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    const capitalize = input => {
+        const words = input.split(" ");
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+        }
+        return words.join(" ");    
     }
 
     const handleSubmit = e => {
