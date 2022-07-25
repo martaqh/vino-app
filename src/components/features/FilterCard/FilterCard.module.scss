@@ -5,6 +5,8 @@
     margin: 10px 0;
     display: flex;
     align-items: center;
+    padding: 10px;
+    border-radius: $radius-base;
 
     .filterCard__label, .filterCard__select {
         flex: 1;
