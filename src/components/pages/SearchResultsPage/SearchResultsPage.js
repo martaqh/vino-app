@@ -59,7 +59,7 @@ const SearchResultsPage = () => {
              <h3>Wyniki wyszukiwania:</h3>
              <Button
                 onClick={handleClick}
-                type="simple"
+                type="reverse"
              >zmień kryteria wyszukiwania</Button>
              
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
