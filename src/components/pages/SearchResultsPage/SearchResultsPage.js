@@ -10,6 +10,7 @@ import Button from '../../common/Button/Button';
 const SearchResultsPage = () => {
     const getAllWinesParams = ({ wines }) => wines.map(wine => Object.values(wine));
     const allWinesParams = useSelector(state => getAllWinesParams(state));
+    console.log(allWinesParams);
     const flattenWinesParams = allWinesParams.map(wine => wine.flat(1))
     console.log(flattenWinesParams);
 

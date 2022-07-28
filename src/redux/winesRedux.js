@@ -1,3 +1,4 @@
+import shortid from "shortid";
 import { API_URL } from "../config";
 
 // selectors
@@ -36,7 +37,8 @@ export const fetchWines = () => {
           kolor: kolor,
           szczep: szczep,
           kraj: kraj,
-          sklep: sklep
+          sklep: sklep,
+          id: shortid()
         }),
       };
       
