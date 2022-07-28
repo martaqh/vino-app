@@ -25,18 +25,18 @@ export const fetchWines = () => {
     }
   };
 
-  export const addWineToServer = (name, color, grapes, country, shop) => {    
+  export const addWineToServer = (nazwa, kolor, szczep, kraj, sklep) => {    
     const newWine = {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          nazwa: name,
-          kolor: color,
-          szczep: grapes,
-          kraj: country,
-          sklep: shop
+          nazwa: nazwa,
+          kolor: kolor,
+          szczep: szczep,
+          kraj: kraj,
+          sklep: sklep
         }),
       };
       
@@ -58,18 +58,18 @@ export const fetchWines = () => {
     fetch(API_URL + '/wines/' + wineId, options)
   }
 
-  export const editWineOnServer = (name, color, grapes, country, shop, wineId) => {
+  export const editWineOnServer = (nazwa, kolor, szczep, kraj, sklep, wineId) => {
     const editedWine = {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          nazwa: name,
-          kolor: color,
-          szczep: grapes,
-          kraj: country,
-          sklep: shop
+          nazwa: nazwa,
+          kolor: kolor,
+          szczep: szczep,
+          kraj: kraj,
+          sklep: sklep
         }),
       };
       
@@ -84,10 +84,11 @@ const winesReducer = (statePart = [], action) => {
         return [...action.payload]
       case ADD_WINE:
         console.log(statePart, action)
-        return {wines: [...statePart, {...action.payload}]}
+        return [...statePart, {...action.payload}]
       case REMOVE_WINE:
         return statePart.filter(wine => wine.id !== action.payload)
       case EDIT_WINE:
+        console.log(statePart, action.payload)
         return statePart.map(wine => wine.id === action.payload.wineId ? action.payload : wine )
       default:
         return statePart;

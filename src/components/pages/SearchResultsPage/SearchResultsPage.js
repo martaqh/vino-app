@@ -56,11 +56,12 @@ const SearchResultsPage = () => {
     if (matchingWines.length > 0)
     return (
         <section>
-             <h3>Wyniki wyszukiwania:</h3>
              <Button
                 onClick={handleClick}
                 type="reverse"
              >zmień kryteria wyszukiwania</Button>
+             <h3>Wyniki wyszukiwania:</h3>
+            
              
         {matchingWines.map(wine => <WineCard key={shortid()} {...wine} />)}
 

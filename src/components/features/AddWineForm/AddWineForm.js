@@ -10,11 +10,11 @@ import  { useNavigate } from "react-router-dom";
 
 const AddWineForm = props => {
     const dispatch = useDispatch();
-    const [name, setName] = useState('');
-    const [color, setColor] = useState('');
-    const [grapes, setGrapes] = useState('');
-    const [country, setCountry] = useState('');
-    const [shop, setShop] = useState('');
+    const [nazwa, setNazwa] = useState('');
+    const [kolor, setKolor] = useState('');
+    const [szczep, setSzczep] = useState('');
+    const [kraj, setKraj] = useState('');
+    const [sklep, setSklep] = useState('');
     
     //const [counter, setCounter] = useState(0);
   /*  const addInput = e => {
@@ -38,13 +38,13 @@ const AddWineForm = props => {
 
     const handleSubmit = e => {
     
-        addWineToServer(capitalize(name),
-                        capitalize(color),
-                        capitalize(grapes),
-                        capitalize(country),
-                        capitalize(shop)
+        addWineToServer(capitalize(nazwa),
+                        capitalize(kolor),
+                        capitalize(szczep),
+                        capitalize(kraj),
+                        capitalize(sklep)
                         );
-        dispatch(addWine({ name, color, grapes, country, shop }));
+        dispatch(addWine({ nazwa, kolor, szczep, kraj, sklep }));
         navigate('/success');
     }
 
@@ -56,8 +56,8 @@ const AddWineForm = props => {
                 <TextInput
                     className="textInput"
                     category="nazwa"
-                    value={name}
-                    onChange={e => setName(e.target.value)}
+                    value={nazwa}
+                    onChange={e => setNazwa(e.target.value)}
                 />
             </div>
             <div className={styles.wineParam}>
@@ -65,8 +65,8 @@ const AddWineForm = props => {
                 <TextInput
                     className="textInput"
                     category="kolor"
-                    value={color}
-                    onChange={e => setColor(e.target.value)}
+                    value={kolor}
+                    onChange={e => setKolor(e.target.value)}
                 />
            </div>
            <div className={styles.wineParam}>
@@ -74,8 +74,8 @@ const AddWineForm = props => {
                 <TextInput
                     className="textInput"
                     category="szczep"
-                    value={grapes}
-                    onChange={e => setGrapes(e.target.value)}
+                    value={szczep}
+                    onChange={e => setSzczep(e.target.value)}
                  />
            </div>
            <div className={styles.wineParam}>
@@ -83,8 +83,8 @@ const AddWineForm = props => {
                 <TextInput
                     className="textInput"
                     category="kraj"
-                    value={country}
-                    onChange={e => setCountry(e.target.value)} />
+                    value={kraj}
+                    onChange={e => setKraj(e.target.value)} />
 
            </div>
            <div className={styles.wineParam}>
@@ -92,8 +92,8 @@ const AddWineForm = props => {
                 <TextInput
                     className="textInput"
                     category="sklep"
-                    value={shop}
-                    onChange={e => setShop(e.target.value)} />
+                    value={sklep}
+                    onChange={e => setSklep(e.target.value)} />
            </div>
             <Button
                 type="basic"

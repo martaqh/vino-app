@@ -5,7 +5,7 @@ import ButtonlikeLink from "../../common/ButtonlikeLink/ButtonlikeLink";
 
 const WineList = () => {
     const wines = useSelector(state => state.wines);
-    console.log(wines);
+
 
     return (
         <main>

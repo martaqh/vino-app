@@ -11,8 +11,6 @@ import { removeWineFromServer, removeWine } from '../../../redux/winesRedux';
 
 const WineCard = props => {
 
-    console.log(props)
-
     const dispatch = useDispatch();  
 
     const handleDelete = e => {

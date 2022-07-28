@@ -9,9 +9,10 @@ import { useNavigate } from 'react-router-dom'
 const FiltersList = () => {
 
     const getAllCategories = ({ wines }) => wines.map(wine => Object.keys(wine));
+    
     const allCategories = useSelector(state => getAllCategories(state));
     const categories = [...new Set(allCategories.flat(1))];
-    const correctCategories = categories.filter(category => category !== 'nazwa' && category !== 'id');
+    const correctCategories = categories.filter(category => category !== 'nazwa' && category !== 'id' && category !== 'wineId');
 
     const navigate = useNavigate();
 

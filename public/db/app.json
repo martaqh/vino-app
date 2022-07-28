@@ -3,7 +3,7 @@
     {
       "nazwa": "Koza",
       "kolor": "czerwone",
-      "szczep": "Castelao",
+      "szczep": "Chardonnay",
       "kraj": "Chile",
       "sklep": "Lidl",
       "id": "Y5i6QMf"
@@ -13,32 +13,32 @@
       "kolor": "czerwone",
       "szczep": "Touriga Nacional",
       "kraj": "Portugalia",
-      "sklep": "Lidl",
+      "sklep": "Kondrat/Słowicza",
       "id": "M3zxouJ"
     },
     {
       "nazwa": "Picadeiro Reserva",
-      "kolor": "czerwone",
+      "kolor": "białe",
       "szczep": "Touriga Nacional",
       "kraj": "Portugalia",
       "sklep": "Kondrat/Słowicza",
       "id": "3P8gNOG"
     },
     {
-      "nazwa": "Momo",
-      "kolor": "białe",
-      "szczep": "Sauvignon Blanc",
-      "kraj": "Nowa Zelandia",
-      "sklep": "Kondrat/Słowicza",
-      "id": "AK_doz8"
+      "nazwa": "Hejka z lejka",
+      "kolor": "Czerwone",
+      "szczep": "Szyraz",
+      "kraj": "Polska",
+      "sklep": "Biedra",
+      "id": "AnNIVyJ"
     },
     {
-      "nazwa": "Hejho",
-      "kolor": "czerwone",
-      "szczep": "ogrodowe",
-      "kraj": "polska",
-      "sklep": "Kiosk Ruchu",
-      "id": "jeEFw-w"
+      "nazwa": "Foka",
+      "kolor": "Czerwone",
+      "szczep": "Merlot",
+      "kraj": "Chile",
+      "sklep": "Lidl",
+      "id": "iLg3uTv"
     }
   ]
 }

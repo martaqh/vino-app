@@ -10,75 +10,77 @@ import styles from './WineInfoEditionForm.module.scss';
 
 
 const WineInfoEditionForm = props => {
+    console.log(props)
     const getEditedWine = ({ wines }) => wines.find(wine => wine.id === props.id);
     const editedWine = useSelector(state => getEditedWine(state));
     console.log('editedwine', editedWine)
 
     const dispatch = useDispatch();
-    const [name, setName] = useState(props.name)
-    const [color, setColor] = useState(props.color);
-    const [grapes, setGrapes] = useState(props.grapes);
-    const [country, setCountry] = useState(props.country);
-    const [shop, setShop] = useState(props.shop);
+    const [nazwa, setNazwa] = useState(props.nazwa)
+    const [kolor, setKolor] = useState(props.kolor);
+    const [szczep, setSzczep] = useState(props.szczep);
+    const [kraj, setKraj] = useState(props.kraj);
+    const [sklep, setSklep] = useState(props.sklep);
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log('clicked')
+        
         const wineId = props.id;
-        editWineOnServer(name, color, grapes, country, shop, wineId);
-        dispatch(editWine({ name, color, grapes, country, shop, wineId }));  
+        console.log(wineId)
+        editWineOnServer(nazwa, kolor, szczep, kraj, sklep, wineId);
+        dispatch(editWine({nazwa, kolor, szczep, kraj, sklep, wineId}));  
     }
 
     return (
-        <div className={styles.editionForm}>
+        <form className={styles.editionForm}>
             <h5>Wprowadź zmiany:</h5>
                 <section>
                     <span></span>
                     <TextInput
                         className="textInput"
                         category="nazwa"
-                        value={name}
+                        value={nazwa}
                         placeholder={editedWine.nazwa}
-                        onChange={e => setName(e.target.value)}/>
+                        onChange={e => setNazwa(e.target.value)}/>
                 </section>
                 <section>
                     <span><FontAwesomeIcon icon={faTint} /></span>
                     <TextInput
                         className="textInput"
                         category="kolor"
-                        value={color}
+                        value={kolor}
                         placeholder={editedWine.kolor}
-                        onChange={e => setColor(e.target.value)}/>
+                        onChange={e => setKolor(e.target.value)}/>
                 </section>
                 <section>
                     <span><FontAwesomeIcon icon={faLeaf} /></span>
                     <TextInput
                         className="textInput"
                         category="szczep"
-                        value={grapes}
+                        value={szczep}
                         placeholder={editedWine.szczep}
-                        onChange={e => setGrapes(e.target.value)}/>
+                        onChange={e => setSzczep(e.target.value)}/>
                 </section>
                 <section>
                     <span><FontAwesomeIcon icon={faGlobe} /></span>
                     <TextInput
                         className="textInput"
                         category="kraj"
-                        value={country}
+                        value={kraj}
                         placeholder={editedWine.kraj}
-                        onChange={e => setCountry(e.target.value)} />
+                        onChange={e => setKraj(e.target.value)} />
                 </section>
                 <section>
                     <span><FontAwesomeIcon icon={faShoppingBasket} /></span>
                     <TextInput
                         className="textInput"
                         category="sklep"
-                        value={shop}
+                        value={sklep}
                         placeholder={editedWine.sklep}
-                        onChange={e => setShop(e.target.value)} />
+                        onChange={e => setSklep(e.target.value)} />
                 </section>
                     <Button onClick={handleSubmit}>Zapisz zmiany</Button>     
-        </div>
+        </form>
     )
 }
 
