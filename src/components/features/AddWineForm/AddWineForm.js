@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { addWine, addWineToServer } from "../../../redux/winesRedux";
 import { useState } from "react";
 import  { useNavigate } from "react-router-dom";
+import { capitalize } from "../../../utils";
 
 
 const AddWineForm = props => {
@@ -26,15 +27,7 @@ const AddWineForm = props => {
 
     const navigate = useNavigate();
 
-    const capitalize = str => {
-       /* const words = str.split(" ");
-        for (let i = 0; i < words.length; i++) {
-            words[i] = words[i][0].toUpperCase() + words[i].substr(1);
-        }
-        
-        return words.join(" "); */
-        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-    }
+    
 
     const handleSubmit = e => {
     

@@ -2,15 +2,15 @@
   "wines": [
     {
       "nazwa": "Koza",
-      "kolor": "czerwone",
-      "szczep": "Chardonnay",
+      "kolor": "Czerwone",
+      "szczep": "Cabernet Franc",
       "kraj": "Chile",
       "sklep": "Lidl",
       "id": "Y5i6QMf"
     },
     {
       "nazwa": "Rosario Selection",
-      "kolor": "czerwone",
+      "kolor": "Czerwone",
       "szczep": "Touriga Nacional",
       "kraj": "Portugalia",
       "sklep": "Kondrat/Słowicza",
@@ -18,27 +18,19 @@
     },
     {
       "nazwa": "Picadeiro Reserva",
-      "kolor": "białe",
+      "kolor": "Czerwone",
       "szczep": "Touriga Nacional",
       "kraj": "Portugalia",
       "sklep": "Kondrat/Słowicza",
       "id": "3P8gNOG"
     },
     {
-      "nazwa": "Hejka z lejka",
+      "nazwa": "Madame Bobalu",
       "kolor": "Czerwone",
-      "szczep": "Szyraz",
-      "kraj": "Polska",
-      "sklep": "Biedra",
-      "id": "AnNIVyJ"
-    },
-    {
-      "nazwa": "Foka",
-      "kolor": "Czerwone",
-      "szczep": "Merlot",
-      "kraj": "Chile",
-      "sklep": "Lidl",
-      "id": "iLg3uTv"
+      "szczep": "Bobal",
+      "kraj": "Hiszpania",
+      "sklep": "Delikatesy Centrum",
+      "id": "YYyoft6Rs"
     }
   ]
 }

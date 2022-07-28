@@ -6,6 +6,7 @@ import Button from '../../common/Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { editWine, editWineOnServer } from '../../../redux/winesRedux';
 import styles from './WineInfoEditionForm.module.scss';
+import { capitalize } from '../../../utils';
 
 
 
@@ -27,7 +28,13 @@ const WineInfoEditionForm = props => {
         
         const wineId = props.id;
         console.log(wineId)
-        editWineOnServer(nazwa, kolor, szczep, kraj, sklep, wineId);
+        editWineOnServer(
+            capitalize(nazwa),
+            capitalize(kolor),
+            capitalize(szczep),
+            capitalize(kraj),
+            capitalize(sklep),
+            wineId);
         dispatch(editWine({nazwa, kolor, szczep, kraj, sklep, wineId}));  
     }
 
