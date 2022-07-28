@@ -3,11 +3,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import shortid from 'shortid';
 import { clearFilters } from '../../../redux/filtersRedux';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { fetchWines } from '../../../redux/winesRedux';
 import ButtonlikeLink from '../../common/ButtonlikeLink/ButtonlikeLink';
 import Button from '../../common/Button/Button';
 
 
 const SearchResultsPage = () => {
+
+    const dispatch = useDispatch();
+    useEffect(() => dispatch(fetchWines()), [dispatch]);
+    
     const getAllWinesParams = ({ wines }) => wines.map(wine => Object.values(wine));
     const allWinesParams = useSelector(state => getAllWinesParams(state));
     console.log(allWinesParams);
@@ -20,7 +26,7 @@ const SearchResultsPage = () => {
     const correctFilters = allFilters.filter(filter => filter !== '')
     console.log(correctFilters)
     
-    const dispatch = useDispatch();
+
     const navigate = useNavigate();
 
     const findMatchingWines = () => {
