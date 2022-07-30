@@ -1,0 +1,36 @@
+{
+  "wines": [
+    {
+      "nazwa": "Koza",
+      "kolor": "Czerwone",
+      "szczep": "Cabernet Franc",
+      "kraj": "Chile",
+      "sklep": "Lidl",
+      "id": "Y5i6QMf"
+    },
+    {
+      "nazwa": "Rosario Selection",
+      "kolor": "Czerwone",
+      "szczep": "Touriga Nacional",
+      "kraj": "Portugalia",
+      "sklep": "Kondrat/Słowicza",
+      "id": "M3zxouJ"
+    },
+    {
+      "nazwa": "Picadeiro",
+      "kolor": "Czerwone",
+      "szczep": "Touriga Franca",
+      "kraj": "Portugalia",
+      "sklep": "Kondrat/Słowicza",
+      "id": "3P8gNOG"
+    },
+    {
+      "nazwa": "Momo",
+      "kolor": "Białe",
+      "szczep": "Souvignon Blanc",
+      "kraj": "Nowa Zelandia",
+      "sklep": "Kondrat/Słowicza",
+      "id": "y2FtcwDA9a"
+    }
+  ]
+}
